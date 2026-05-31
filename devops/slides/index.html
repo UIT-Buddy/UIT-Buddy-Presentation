@@ -1,0 +1,1807 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UIT Buddy - DevOps Presentation</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- Slide Menu Drawer -->
+  <div class="slide-menu" id="slide-menu"></div>
+
+  <!-- Slide Container (Scaled 16:9 viewport) -->
+  <div class="slide-container">
+
+    <!-- SLIDE 1: Trang bìa -->
+    <div class="slide active">
+      <div class="slide-title-page-creative">
+        <div class="bg-pattern bg-pattern-1"></div>
+        <div class="bg-pattern bg-pattern-2"></div>
+        <div class="title-card">
+          <img src="../images/uit-logo.png" alt="UIT Logo" class="title-page-logo">
+          <h1 class="title-page-main-creative">UIT BUDDY</h1>
+          <p class="title-page-sub-creative">Ứng dụng đồng hành cùng sinh viên UIT trong học tập</p>
+          <div class="title-divider"></div>
+          <p class="title-page-type">BÀI THUYẾT TRÌNH MÔN DEVOPS</p>
+          <div class="title-page-meta-creative">
+            <div class="meta-item">
+              <span class="meta-label">Môn học</span>
+              <span class="meta-value">DevOps trong phát triển phần mềm - SE359.Q21</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Nhóm</span>
+              <span class="meta-value">UIT BUDDY</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Giảng viên hướng dẫn</span>
+              <span class="meta-value">Võ Tuấn Kiệt</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SLIDE 2: Giới thiệu thành viên -->
+    <div class="slide">
+      <header class="slide-header">
+        <div class="header-left">
+          <button class="menu-toggle">☰</button>
+          <img src="../images/uit-logo.png" alt="UIT Logo" class="uit-logo">
+          <div class="project-brand">
+            <span class="brand-title">UIT Buddy</span>
+            <span class="brand-tag">Thành viên</span>
+          </div>
+        </div>
+        <h2 class="slide-title">Giới thiệu thành viên</h2>
+        <div class="progress-bar"></div>
+      </header>
+      <div class="slide-body">
+        <div class="profile-grid">
+          <div class="profile-card">
+            <div class="profile-photo-container">
+              <div class="profile-photo-placeholder">
+                <span class="placeholder-icon">👤</span>
+                <span class="placeholder-text">Kéo thả ảnh thành viên vào đây</span>
+              </div>
+            </div>
+            <div class="profile-name">Phan Đình Minh</div>
+            <div class="profile-id">MSSV: 23520949</div>
+            <div class="profile-role">Frontend / DevOps</div>
+          </div>
+          <div class="profile-card">
+            <div class="profile-photo-container">
+              <div class="profile-photo-placeholder">
+                <span class="placeholder-icon">👤</span>
+                <span class="placeholder-text">Kéo thả ảnh thành viên vào đây</span>
+              </div>
+            </div>
+            <div class="profile-name">Võ Minh Tiến</div>
+            <div class="profile-id">MSSV: 24521789</div>
+            <div class="profile-role">Backend / DevOps</div>
+          </div>
+        </div>
+        <footer class="slide-footer">
+          <div class="footer-text">DevOps trong phát triển phần mềm - Nhóm: UIT BUDDY</div>
+          <div class="slide-counter">Trang <span class="current-slide-num"></span> / <span class="total-slides-num"></span></div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- SLIDE 3: Giới thiệu đề tài -->
+    <div class="slide">
+      <header class="slide-header">
+        <div class="header-left">
+          <button class="menu-toggle">☰</button>
+          <img src="../images/uit-logo.png" alt="UIT Logo" class="uit-logo">
+          <div class="project-brand">
+            <span class="brand-title">UIT Buddy</span>
+            <span class="brand-tag">Đề tài</span>
+          </div>
+        </div>
+        <h2 class="slide-title">Giới thiệu đề tài</h2>
+        <div class="progress-bar"></div>
+      </header>
+      <div class="slide-body">
+        <div class="grid-2">
+          <div class="flex-col">
+            <div class="card">
+              <h3>Vấn đề đặt ra</h3>
+              <p>Sinh viên UIT phải truy cập vào quá nhiều nền tảng học tập khác nhau (Moodle, DAA Portal, Email trường...) dẫn đến thông tin bị phân mảnh và dễ bỏ lỡ lịch quan trọng.</p>
+            </div>
+            <div class="card card-accent">
+              <h3>Giải pháp — UIT Buddy</h3>
+              <p>Ứng dụng di động (Android/iOS) tích hợp đa nền tảng trong một giao diện duy nhất:</p>
+              <ul class="bullet-list" style="margin-top: 10px; display: grid; grid-template-columns: 1fr 1fr; gap: 5px;">
+                <li>📅 Lịch học & Deadline</li>
+                <li>📊 Điểm & Tiến độ</li>
+                <li>📰 Mạng xã hội nội bộ</li>
+                <li>💬 Chat & Video call</li>
+                <li>📁 Tài liệu lưu trữ</li>
+                <li>🔔 Thông báo Push</li>
+              </ul>
+            </div>
+          </div>
+          <div class="phone-mockups">
+            <div class="phone-frame" style="width: 250px; height: 500px; border-width: 10px; border-radius: 28px;">
+              <img src="../images/giao%20di%E1%BB%87n%20app%201.png" alt="App Screenshot 1">
+            </div>
+            <div class="phone-frame" style="width: 250px; height: 500px; border-width: 10px; border-radius: 28px;">
+              <img src="../images/giao%20di%E1%BB%87n%20app%202.png" alt="App Screenshot 2">
+            </div>
+            <div class="phone-frame" style="width: 250px; height: 500px; border-width: 10px; border-radius: 28px;">
+              <img src="../images/giao%20di%E1%BB%87n%20app%203.png" alt="App Screenshot 3">
+            </div>
+          </div>
+        </div>
+        <footer class="slide-footer">
+          <div class="footer-text">DevOps trong phát triển phần mềm - Nhóm: UIT BUDDY</div>
+          <div class="slide-counter">Trang <span class="current-slide-num"></span> / <span class="total-slides-num"></span></div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- SLIDE 4: Tổng quan kiến trúc hệ thống -->
+    <div class="slide">
+      <header class="slide-header">
+        <div class="header-left">
+          <button class="menu-toggle">☰</button>
+          <img src="../images/uit-logo.png" alt="UIT Logo" class="uit-logo">
+          <div class="project-brand">
+            <span class="brand-title">UIT Buddy</span>
+            <span class="brand-tag">Kiến trúc</span>
+          </div>
+        </div>
+        <h2 class="slide-title">Tổng quan kiến trúc hệ thống</h2>
+        <div class="progress-bar"></div>
+      </header>
+      <div class="slide-body">
+        <div class="grid-2">
+          <div class="flex-col">
+            <p class="text-highlight">Mô hình 3 Repositories thuộc 1 Tổ chức GitHub duy nhất:</p>
+            <table>
+              <thead>
+                <tr>
+                  <th>Repository</th>
+                  <th>Vai trò chính</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>UIT-Buddy-Backend</strong></td>
+                  <td>Spring Boot API + Terraform + Dockerfile</td>
+                </tr>
+                <tr>
+                  <td><strong>UIT-Buddy-Frontend-App</strong></td>
+                  <td>Flutter App (Android/iOS)</td>
+                </tr>
+                <tr>
+                  <td><strong>UIT-Buddy-GitOps-Manifests</strong></td>
+                  <td>Cấu hình & Scripts deploy production</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="image-container" style="max-height: 520px;">
+            <img src="../images/github-repo.png" alt="Github Repo" class="slide-image">
+          </div>
+        </div>
+        <footer class="slide-footer">
+          <div class="footer-text">DevOps trong phát triển phần mềm - Nhóm: UIT BUDDY</div>
+          <div class="slide-counter">Trang <span class="current-slide-num"></span> / <span class="total-slides-num"></span></div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- SLIDE 5: Công nghệ DevOps sử dụng -->
+    <div class="slide">
+      <header class="slide-header">
+        <div class="header-left">
+          <button class="menu-toggle">☰</button>
+          <img src="../images/uit-logo.png" alt="UIT Logo" class="uit-logo">
+          <div class="project-brand">
+            <span class="brand-title">UIT Buddy</span>
+            <span class="brand-tag">Công nghệ</span>
+          </div>
+        </div>
+        <h2 class="slide-title">Công nghệ DevOps sử dụng</h2>
+        <div class="progress-bar"></div>
+      </header>
+      <div class="slide-body">
+        <div class="grid-3" style="grid-template-rows: 1fr 1fr; gap: 20px;">
+          <div class="card card-accent">
+            <h3>☁️ Cloud Services</h3>
+            <p><strong>AWS</strong> (VPC, EC2, RDS, S3, CloudFront, IAM, Secrets Manager)</p>
+          </div>
+          <div class="card">
+            <h3>📦 Containerization</h3>
+            <p><strong>Docker / Podman</strong> đóng gói các ứng dụng Backend và AI</p>
+          </div>
+          <div class="card card-accent">
+            <h3>🛠️ Infrastructure as Code</h3>
+            <p><strong>Terraform</strong> quản lý và khởi tạo hạ tầng tự động</p>
+          </div>
+          <div class="card">
+            <h3>🔄 CI/CD Pipelines</h3>
+            <p><strong>GitHub Actions</strong> tích hợp và triển khai tự động hóa</p>
+          </div>
+          <div class="card card-accent">
+            <h3>🗄️ Container Registry</h3>
+            <p><strong>GHCR</strong> lưu trữ docker images trực thuộc GitHub Org</p>
+          </div>
+          <div class="card">
+            <h3>📱 App Distribution</h3>
+            <p><strong>Firebase</strong> phân phối bản build Mobile thử nghiệm</p>
+          </div>
+        </div>
+        <footer class="slide-footer">
+          <div class="footer-text">DevOps trong phát triển phần mềm - Nhóm: UIT BUDDY</div>
+          <div class="slide-counter">Trang <span class="current-slide-num"></span> / <span class="total-slides-num"></span></div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- SLIDE 6: AWS Architecture Overview -->
+    <div class="slide">
+      <header class="slide-header">
+        <div class="header-left">
+          <button class="menu-toggle">☰</button>
+          <img src="../images/uit-logo.png" alt="UIT Logo" class="uit-logo">
+          <div class="project-brand">
+            <span class="brand-title">UIT Buddy</span>
+            <span class="brand-tag">AWS Infra</span>
+          </div>
+        </div>
+        <h2 class="slide-title">AWS Architecture Overview</h2>
+        <div class="progress-bar"></div>
+      </header>
+      <div class="slide-body">
+        <div class="grid-2">
+          <div class="flex-col">
+            <div class="card">
+              <h3>Hạ tầng AWS Cloud</h3>
+              <p>Tất cả tài nguyên hạ tầng được triển khai tại Region <strong>ap-southeast-2 (Sydney)</strong> nhằm đáp ứng tính sẵn sàng cao và tối ưu chi phí.</p>
+            </div>
+            <div class="card card-accent">
+              <h3>Đặc điểm thiết kế</h3>
+              <ul class="bullet-list">
+                <li>Bảo mật đa lớp qua Security Groups & Network ACLs</li>
+                <li>Tách biệt tài nguyên Public & Private</li>
+                <li>Sử dụng dịch vụ Managed tự động của AWS</li>
+              </ul>
+            </div>
+          </div>
+          <div class="image-container" style="max-height: 520px;">
+            <img src="../images/AWS%20Architecture%20Diagram.png" alt="AWS Architecture Diagram" class="slide-image">
+          </div>
+        </div>
+        <footer class="slide-footer">
+          <div class="footer-text">DevOps trong phát triển phần mềm - Nhóm: UIT BUDDY</div>
+          <div class="slide-counter">Trang <span class="current-slide-num"></span> / <span class="total-slides-num"></span></div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- SLIDE 7: AWS VPC & Networking -->
+    <div class="slide">
+      <header class="slide-header">
+        <div class="header-left">
+          <button class="menu-toggle">☰</button>
+          <img src="../images/uit-logo.png" alt="UIT Logo" class="uit-logo">
+          <div class="project-brand">
+            <span class="brand-title">UIT Buddy</span>
+            <span class="brand-tag">Networking</span>
+          </div>
+        </div>
+        <h2 class="slide-title">AWS VPC & Networking</h2>
+        <div class="progress-bar"></div>
+      </header>
+      <div class="slide-body">
+        <div class="grid-2">
+          <div class="flex-col">
+            <div class="card">
+              <h3>Thiết kế phân vùng Subnets</h3>
+              <pre style="margin-top:0px; padding:15px; font-size:16px;"><code>VPC  10.0.0.0/16
+├── Public Subnet  10.0.1.0/24  (AZ-a)  → EC2 + Elastic IP
+├── Private Subnet 10.0.10.0/24 (AZ-a)  → RDS PostgreSQL
+└── Private Subnet 10.0.11.0/24 (AZ-b)  → Dự phòng Multi-AZ</code></pre>
+            </div>
+            <div class="card card-accent">
+              <h3>Bảo mật định tuyến</h3>
+              <ul class="bullet-list">
+                <li><strong>Internet Gateway</strong> kết nối với Public Route Table để cấp Internet cho EC2.</li>
+                <li><strong>RDS nằm trong Private Subnet</strong> hoàn toàn, không có public IP endpoint. Chỉ cho phép kết nối nội bộ từ EC2.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="image-container" style="max-height: 520px;">
+            <img src="../images/VPC-image.png" alt="VPC Image" class="slide-image">
+          </div>
+        </div>
+        <footer class="slide-footer">
+          <div class="footer-text">DevOps trong phát triển phần mềm - Nhóm: UIT BUDDY</div>
+          <div class="slide-counter">Trang <span class="current-slide-num"></span> / <span class="total-slides-num"></span></div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- SLIDE 8: AWS EC2 -->
+    <div class="slide">
+      <header class="slide-header">
+        <div class="header-left">
+          <button class="menu-toggle">☰</button>
+          <img src="../images/uit-logo.png" alt="UIT Logo" class="uit-logo">
+          <div class="project-brand">
+            <span class="brand-title">UIT Buddy</span>
+            <span class="brand-tag">Compute</span>
+          </div>
+        </div>
+        <h2 class="slide-title">AWS EC2</h2>
+        <div class="progress-bar"></div>
+      </header>
+      <div class="slide-body">
+        <div class="grid-2">
+          <div class="flex-col">
+            <div class="card">
+              <h3>Cấu hình Instance</h3>
+              <p><strong>Cấu hình:</strong> <code>t3.small</code> — Hệ điều hành Ubuntu 24.04 LTS — 30GB ổ cứng SSD gp3.</p>
+            </div>
+            <div class="card card-accent">
+              <h3>Vai trò của EC2</h3>
+              <ul class="bullet-list">
+                <li>🏃 Chạy toàn bộ containers (Backend, AI, Redis, n8n, Neo4j).</li>
+                <li>🤖 Chạy <strong>GitHub Actions Self-Hosted Runner</strong> trực tiếp trên EC2 để deploy CD.</li>
+                <li>📌 <strong>Elastic IP</strong> cấp phát IP tĩnh, không bị đổi khi restart instance.</li>
+                <li>🔐 Truy cập thông qua <strong>AWS SSM Session Manager</strong> (không mở SSH port 22).</li>
+              </ul>
+            </div>
+          </div>
+          <div class="image-container" style="max-height: 520px;">
+            <img src="../images/EC2.png" alt="EC2 Console Screenshot" class="slide-image">
+          </div>
+        </div>
+        <footer class="slide-footer">
+          <div class="footer-text">DevOps trong phát triển phần mềm - Nhóm: UIT BUDDY</div>
+          <div class="slide-counter">Trang <span class="current-slide-num"></span> / <span class="total-slides-num"></span></div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- SLIDE 9: AWS RDS -->
+    <div class="slide">
+      <header class="slide-header">
+        <div class="header-left">
+          <button class="menu-toggle">☰</button>
+          <img src="../images/uit-logo.png" alt="UIT Logo" class="uit-logo">
+          <div class="project-brand">
+            <span class="brand-title">UIT Buddy</span>
+            <span class="brand-tag">Database</span>
+          </div>
+        </div>
+        <h2 class="slide-title">AWS RDS</h2>
+        <div class="progress-bar"></div>
+      </header>
+      <div class="slide-body">
+        <div class="grid-2">
+          <div class="flex-col">
+            <div class="card">
+              <h3>PostgreSQL 17 — Fully Managed</h3>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Thông số</th>
+                    <th>Cấu hình</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Instance Type</td>
+                    <td><code>db.t3.micro</code></td>
+                  </tr>
+                  <tr>
+                    <td>Dung lượng</td>
+                    <td>20 GB gp3 SSD</td>
+                  </tr>
+                  <tr>
+                    <td>Phân vùng</td>
+                    <td>Private Subnet (Isolated)</td>
+                  </tr>
+                  <tr>
+                    <td>Bảo mật</td>
+                    <td>Chỉ cho phép EC2 kết nối (port 5432)</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="card card-accent">
+              <p>AWS tự động lo các khâu backup định kỳ, patching, và nâng cấp. Backend kết nối qua JDBC endpoint nội bộ trong VPC bảo mật.</p>
+            </div>
+          </div>
+          <div class="image-container" style="max-height: 520px;">
+            <img src="../images/RDS.png" alt="RDS Console Screenshot" class="slide-image">
+          </div>
+        </div>
+        <footer class="slide-footer">
+          <div class="footer-text">DevOps trong phát triển phần mềm - Nhóm: UIT BUDDY</div>
+          <div class="slide-counter">Trang <span class="current-slide-num"></span> / <span class="total-slides-num"></span></div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- SLIDE 10: AWS S3 + CloudFront CDN -->
+    <div class="slide">
+      <header class="slide-header">
+        <div class="header-left">
+          <button class="menu-toggle">☰</button>
+          <img src="../images/uit-logo.png" alt="UIT Logo" class="uit-logo">
+          <div class="project-brand">
+            <span class="brand-title">UIT Buddy</span>
+            <span class="brand-tag">Storage & CDN</span>
+          </div>
+        </div>
+        <h2 class="slide-title">AWS S3 + CloudFront CDN</h2>
+        <div class="progress-bar"></div>
+      </header>
+      <div class="slide-body">
+        <div class="grid-2">
+          <div class="flex-col">
+            <div class="card">
+              <h3>S3 Storage</h3>
+              <p>Dùng để lưu trữ tài liệu học tập, hình ảnh, video của sinh viên. <strong>Block All Public Access</strong> được bật để đảm bảo dữ liệu không bị rò rỉ trực tiếp.</p>
+            </div>
+            <div class="card card-accent">
+              <h3>CloudFront CDN</h3>
+              <p>Phân phối tài nguyên tĩnh toàn cầu qua giao thức HTTPS bảo mật. Kết nối S3 an toàn qua <strong>Origin Access Control (OAC)</strong> có SigV4.</p>
+              <pre style="margin-top:10px; padding:15px; font-size:16px;"><code>Mobile App ──(HTTPS)──> CloudFront ──(OAC SigV4)──> Private S3</code></pre>
+            </div>
+          </div>
+          <div class="image-container" style="max-height: 520px;">
+            <img src="../images/S3.png" alt="S3 Bucket Console Screenshot" class="slide-image">
+          </div>
+        </div>
+        <footer class="slide-footer">
+          <div class="footer-text">DevOps trong phát triển phần mềm - Nhóm: UIT BUDDY</div>
+          <div class="slide-counter">Trang <span class="current-slide-num"></span> / <span class="total-slides-num"></span></div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- SLIDE 11: AWS IAM — Least Privilege -->
+    <div class="slide">
+      <header class="slide-header">
+        <div class="header-left">
+          <button class="menu-toggle">☰</button>
+          <img src="../images/uit-logo.png" alt="UIT Logo" class="uit-logo">
+          <div class="project-brand">
+            <span class="brand-title">UIT Buddy</span>
+            <span class="brand-tag">Bảo mật</span>
+          </div>
+        </div>
+        <h2 class="slide-title">AWS IAM — Least Privilege</h2>
+        <div class="progress-bar"></div>
+      </header>
+      <div class="slide-body">
+        <div class="grid-2">
+          <div class="flex-col">
+            <p class="text-highlight">Nguyên tắc: Mỗi thực thể chỉ được cấp đúng những quyền tối thiểu cần thiết để vận hành:</p>
+            <table>
+              <thead>
+                <tr>
+                  <th>Thực thể (Identity)</th>
+                  <th>Quyền được cấp (Permissions)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>EC2 IAM Role</strong></td>
+                  <td>SSM Session Manager + Secrets Manager (Read) + S3 (Read/Write)</td>
+                </tr>
+                <tr>
+                  <td><strong>S3 Client (IAM User)</strong></td>
+                  <td>Chỉ PutObject + DeleteObject từ backend container</td>
+                </tr>
+                <tr>
+                  <td><strong>CloudFront</strong></td>
+                  <td>Chỉ GetObject từ private S3 (thông qua OAC)</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="card card-accent">
+              <p>🔒 Tuyệt đối không sử dụng Root Account trong vận hành. Tránh hardcode credentials bằng cách gắn trực tiếp IAM Instance Profile vào EC2.</p>
+            </div>
+          </div>
+          <div class="image-container" style="max-height: 520px;">
+            <img src="../images/IAM.png" alt="IAM Console Screenshot" class="slide-image">
+          </div>
+        </div>
+        <footer class="slide-footer">
+          <div class="footer-text">DevOps trong phát triển phần mềm - Nhóm: UIT BUDDY</div>
+          <div class="slide-counter">Trang <span class="current-slide-num"></span> / <span class="total-slides-num"></span></div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- SLIDE 12: AWS Secrets Manager -->
+    <div class="slide">
+      <header class="slide-header">
+        <div class="header-left">
+          <button class="menu-toggle">☰</button>
+          <img src="../images/uit-logo.png" alt="UIT Logo" class="uit-logo">
+          <div class="project-brand">
+            <span class="brand-title">UIT Buddy</span>
+            <span class="brand-tag">Secrets</span>
+          </div>
+        </div>
+        <h2 class="slide-title">AWS Secrets Manager</h2>
+        <div class="progress-bar"></div>
+      </header>
+      <div class="slide-body">
+        <div class="grid-2">
+          <div class="flex-col">
+            <div class="card">
+              <h3>Lưu trữ Secrets an toàn trên Cloud</h3>
+              <p>Terraform khởi tạo các secret key như mật khẩu cơ sở dữ liệu: <code>uitbuddy/backend/secrets-v2</code></p>
+              <p>EC2 instance truy cập trực tiếp qua IAM Role mà không cần lưu Access Key/Secret Key trong code.</p>
+            </div>
+            <div class="card card-accent">
+              <h3>GitHub Secrets (cho CI/CD)</h3>
+              <ul class="bullet-list" style="margin-bottom:0;">
+                <li><code>BACKEND_ENV_FILE</code>: Chứa toàn bộ các biến môi trường Production.</li>
+                <li><code>FIREBASE_ADMINSDK_JSON</code>: Chứa file credentials dịch vụ Firebase.</li>
+                <li><code>KEYSTORE_BASE64</code>: Key signing để đóng gói ứng dụng Android APK.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="grid-2" style="gap:20px;">
+            <div class="image-container" style="max-height: 250px;">
+              <img src="../images/aws-secret-manager.png" alt="AWS Secrets Manager" class="slide-image">
+            </div>
+            <div class="image-container" style="max-height: 250px;">
+              <img src="../images/github-action-secret.png" alt="GitHub Secrets" class="slide-image">
+            </div>
+          </div>
+        </div>
+        <footer class="slide-footer">
+          <div class="footer-text">DevOps trong phát triển phần mềm - Nhóm: UIT BUDDY</div>
+          <div class="slide-counter">Trang <span class="current-slide-num"></span> / <span class="total-slides-num"></span></div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- SLIDE 13: Terraform as Infrastructure as Code -->
+    <div class="slide">
+      <header class="slide-header">
+        <div class="header-left">
+          <button class="menu-toggle">☰</button>
+          <img src="../images/uit-logo.png" alt="UIT Logo" class="uit-logo">
+          <div class="project-brand">
+            <span class="brand-title">UIT Buddy</span>
+            <span class="brand-tag">IaC</span>
+          </div>
+        </div>
+        <h2 class="slide-title">Terraform as Infrastructure as Code</h2>
+        <div class="progress-bar"></div>
+      </header>
+      <div class="slide-body">
+        <div class="grid-2">
+          <div class="flex-col">
+            <div class="card">
+              <h3>Cấu trúc thư mục Terraform</h3>
+              <pre style="margin-top:0px; padding:15px; font-size:16px; max-height: 380px;"><code>infrastructure/terraform/
+├── network.tf    → VPC, Subnets, IGW, Route Tables
+├── ec2.tf        → EC2, Elastic IP
+├── rds.tf        → RDS PostgreSQL 17
+├── s3.tf         → S3 + CloudFront + OAC
+├── iam.tf        → Roles, Policies, Instance Profile
+├── security.tf   → Security Groups
+└── secrets.tf    → AWS Secrets Manager</code></pre>
+            </div>
+          </div>
+          <div class="flex-col">
+            <div class="card card-accent" style="display: flex; align-items: center; justify-content: center; padding: 40px; text-align: center;">
+              <div style="font-size: 80px; margin-bottom: 20px;">💜</div>
+              <h3>Ưu điểm IaC</h3>
+              <ul class="bullet-list" style="text-align: left; width: 100%;">
+                <li><strong>Tái sử dụng (Reproducible):</strong> Khởi tạo hoặc hủy toàn bộ hệ thống tài nguyên AWS chỉ với một vài câu lệnh.</li>
+                <li><strong>Quản lý phiên bản (Version Controlled):</strong> Mọi thay đổi về cơ sở hạ tầng đều được lưu trữ và review qua Git.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <footer class="slide-footer">
+          <div class="footer-text">DevOps trong phát triển phần mềm - Nhóm: UIT BUDDY</div>
+          <div class="slide-counter">Trang <span class="current-slide-num"></span> / <span class="total-slides-num"></span></div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- SLIDE 14: Docker — Containerization -->
+    <div class="slide">
+      <header class="slide-header">
+        <div class="header-left">
+          <button class="menu-toggle">☰</button>
+          <img src="../images/uit-logo.png" alt="UIT Logo" class="uit-logo">
+          <div class="project-brand">
+            <span class="brand-title">UIT Buddy</span>
+            <span class="brand-tag">Containers</span>
+          </div>
+        </div>
+        <h2 class="slide-title">Docker — Containerization</h2>
+        <div class="progress-bar"></div>
+      </header>
+      <div class="slide-body">
+        <div class="grid-2">
+          <div class="flex-col">
+            <div class="card">
+              <h3>Đóng gói ứng dụng</h3>
+              <p>Cả Backend (Spring Boot) và AI Service (Python) được đóng gói độc lập vào các Docker Image.</p>
+            </div>
+            <div class="card card-accent">
+              <h3>Quy trình và Tiêu chuẩn</h3>
+              <ul class="bullet-list">
+                <li><strong>Multi-stage Build:</strong> Tách biệt giai đoạn build và runtime để tối ưu hóa kích thước image và giữ môi trường chạy an toàn, sạch sẽ.</li>
+                <li><strong>Đồng bộ môi trường (Portability):</strong> Đảm bảo ứng dụng chạy nhất quán trên các môi trường Local, Staging và Production.</li>
+              </ul>
+            </div>
+          </div>
+          <!-- HTML Custom Docker Diagram -->
+          <div class="diagram-container">
+            <div class="flex-col" style="align-items: center; width: 100%;">
+              <div class="flow-chart">
+                <div class="flow-node">Source Code</div>
+                <div class="flow-arrow">➔</div>
+                <div class="flow-node" style="background-color: var(--light-blue);">Multi-stage Build</div>
+                <div class="flow-arrow">➔</div>
+                <div class="flow-node" style="background-color: var(--primary-blue); color: white;">Docker Image</div>
+              </div>
+              <div style="margin-top: 40px; display: flex; gap: 20px; width: 100%;">
+                <div class="card" style="flex: 1; text-align: center; border-left: none; border-top: 4px solid var(--primary-blue);">
+                  <h3>⚡ Triển khai nhanh</h3>
+                  <p style="font-size: 18px;">Khởi động containers chỉ trong vài giây.</p>
+                </div>
+                <div class="card" style="flex: 1; text-align: center; border-left: none; border-top: 4px solid var(--accent-blue);">
+                  <h3>🔽 Tối ưu kích thước</h3>
+                  <p style="font-size: 18px;">Image gọn nhẹ, loại bỏ dependencies thừa.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer class="slide-footer">
+          <div class="footer-text">DevOps trong phát triển phần mềm - Nhóm: UIT BUDDY</div>
+          <div class="slide-counter">Trang <span class="current-slide-num"></span> / <span class="total-slides-num"></span></div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- SLIDE 15: Docker Compose — Local Development -->
+    <div class="slide">
+      <header class="slide-header">
+        <div class="header-left">
+          <button class="menu-toggle">☰</button>
+          <img src="../images/uit-logo.png" alt="UIT Logo" class="uit-logo">
+          <div class="project-brand">
+            <span class="brand-title">UIT Buddy</span>
+            <span class="brand-tag">Local Dev</span>
+          </div>
+        </div>
+        <h2 class="slide-title">Docker Compose — Local Dev</h2>
+        <div class="progress-bar"></div>
+      </header>
+      <div class="slide-body">
+        <div class="grid-2">
+          <div class="flex-col">
+            <div class="card">
+              <h3><code>docker-compose.yml</code> local</h3>
+              <pre style="margin-top:0px; padding:15px; font-size:16px;"><code class="highlight-yaml"><span class="key">services:</span>
+  <span class="key">postgres:</span> <span class="comment"># PostgreSQL 17 Alpine</span>
+  <span class="key">redis:</span>    <span class="comment"># Redis 8 Alpine</span>
+  <span class="key">backend:</span>
+    <span class="key">build:</span> . <span class="comment"># Build từ Dockerfile local</span>
+    <span class="key">env_file:</span> .env
+    <span class="key">depends_on:</span> [postgres, redis]</code></pre>
+            </div>
+          </div>
+          <div class="flex-col">
+            <div class="card card-accent">
+              <h3>Tự động hóa qua Makefile</h3>
+              <p>Giúp rút ngắn thao tác gõ lệnh cho lập trình viên:</p>
+              <pre style="margin-top:10px; padding:15px; font-size:16px; background-color: #0f172a;"><code>make dev    # Khởi chạy infra + Spring Boot dev mode
+make up     # Khởi chạy tất cả containers
+make down   # Dừng tất cả dịch vụ đang chạy
+make logs   # Theo dõi logs real-time của containers</code></pre>
+            </div>
+          </div>
+        </div>
+        <footer class="slide-footer">
+          <div class="footer-text">DevOps trong phát triển phần mềm - Nhóm: UIT BUDDY</div>
+          <div class="slide-counter">Trang <span class="current-slide-num"></span> / <span class="total-slides-num"></span></div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- SLIDE 16: Docker Compose — Production -->
+    <div class="slide">
+      <header class="slide-header">
+        <div class="header-left">
+          <button class="menu-toggle">☰</button>
+          <img src="../images/uit-logo.png" alt="UIT Logo" class="uit-logo">
+          <div class="project-brand">
+            <span class="brand-title">UIT Buddy</span>
+            <span class="brand-tag">Production</span>
+          </div>
+        </div>
+        <h2 class="slide-title">Docker Compose — Production</h2>
+        <div class="progress-bar"></div>
+      </header>
+      <div class="slide-body">
+        <div class="grid-2">
+          <div class="flex-col">
+            <div class="card">
+              <h3><code>docker-compose.backend.prod.yaml</code></h3>
+              <pre style="margin-top:0px; padding:15px; font-size:16px;"><code class="highlight-yaml"><span class="key">services:</span>
+  <span class="key">redis:</span>
+    <span class="key">image:</span> redis:8-alpine
+    <span class="key">healthcheck:</span>
+      <span class="key">test:</span> ["CMD", "redis-cli", "ping"]
+  <span class="key">backend:</span>
+    <span class="key">image:</span> ghcr.io/uit-buddy/backend:${IMAGE_TAG}
+    <span class="key">restart:</span> always
+    <span class="key">depends_on:</span>
+      <span class="key">redis:</span>
+        <span class="key">condition:</span> service_healthy</code></pre>
+            </div>
+          </div>
+          <div class="flex-col">
+            <div class="card card-accent">
+              <h3>Điểm khác biệt Dev vs Prod</h3>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Hạng mục</th>
+                    <th>Local (Dev)</th>
+                    <th>Server (Prod)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Build Source</td>
+                    <td>Build từ code local</td>
+                    <td>Pull image từ GHCR</td>
+                  </tr>
+                  <tr>
+                    <td>Database</td>
+                    <td>PostgreSQL container</td>
+                    <td>AWS RDS PostgreSQL 17</td>
+                  </tr>
+                  <tr>
+                    <td>Secrets</td>
+                    <td>File <code>.env</code> local</td>
+                    <td>AWS Secrets Manager</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <footer class="slide-footer">
+          <div class="footer-text">DevOps trong phát triển phần mềm - Nhóm: UIT BUDDY</div>
+          <div class="slide-counter">Trang <span class="current-slide-num"></span> / <span class="total-slides-num"></span></div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- SLIDE 17: Production: 6 Containers trên EC2 -->
+    <div class="slide">
+      <header class="slide-header">
+        <div class="header-left">
+          <button class="menu-toggle">☰</button>
+          <img src="../images/uit-logo.png" alt="UIT Logo" class="uit-logo">
+          <div class="project-brand">
+            <span class="brand-title">UIT Buddy</span>
+            <span class="brand-tag">Infra Nodes</span>
+          </div>
+        </div>
+        <h2 class="slide-title">Production: 6 Containers trên EC2</h2>
+        <div class="progress-bar"></div>
+      </header>
+      <div class="slide-body">
+        <div class="grid-2">
+          <div class="flex-col">
+            <div class="card">
+              <h3>Hạ tầng chạy trên EC2 (t3.small)</h3>
+              <p>Quản lý tập trung bằng 3 tập tin cấu hình <code>docker-compose</code> riêng biệt để dễ bảo trì:</p>
+              <ul class="bullet-list" style="margin-top: 10px;">
+                <li>🟢 <strong>uit-buddy-backend</strong> (Port 8080) - Spring Boot Rest API</li>
+                <li>🟢 <strong>buddy-redis</strong> (Port 6379) - Caching và Session</li>
+                <li>🟢 <strong>buddy-pgadmin</strong> (Port 5050) - Database UI Monitor</li>
+                <li>🟢 <strong>uit-buddy-ai</strong> (Port 8000) - AI Service (Python FastAPI)</li>
+                <li>🟢 <strong>buddy-neo4j</strong> (Port 7474) - Graph Database</li>
+                <li>🟢 <strong>buddy-n8n</strong> (Port 5678) - Workflow Automation Engine</li>
+              </ul>
+            </div>
+          </div>
+          <!-- Custom HTML Dashboard Diagram of Containers -->
+          <div class="diagram-container">
+            <div style="width: 100%; text-align: center;">
+              <h3 style="margin-bottom: 20px; color: var(--primary-blue);">🖥️ AWS EC2 Instance Node</h3>
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+                <div style="background: white; border: 2px solid var(--primary-blue); border-radius: 8px; padding: 15px;">
+                  <span style="font-weight: 700; color: var(--primary-blue);">Backend API</span><br>
+                  <span style="font-size:16px; color: var(--text-muted);">Spring Boot (8080)</span>
+                </div>
+                <div style="background: white; border: 2px solid var(--primary-blue); border-radius: 8px; padding: 15px;">
+                  <span style="font-weight: 700; color: var(--primary-blue);">AI Service</span><br>
+                  <span style="font-size:16px; color: var(--text-muted);">Python FastAPI (8000)</span>
+                </div>
+                <div style="background: white; border: 2px solid var(--primary-blue); border-radius: 8px; padding: 15px;">
+                  <span style="font-weight: 700; color: var(--primary-blue);">Redis Cache</span><br>
+                  <span style="font-size:16px; color: var(--text-muted);">Session Store (6379)</span>
+                </div>
+                <div style="background: white; border: 2px solid var(--primary-blue); border-radius: 8px; padding: 15px;">
+                  <span style="font-weight: 700; color: var(--primary-blue);">Neo4j Graph DB</span><br>
+                  <span style="font-size:16px; color: var(--text-muted);">Graph Engine (7474)</span>
+                </div>
+                <div style="background: white; border: 2px solid var(--primary-blue); border-radius: 8px; padding: 15px;">
+                  <span style="font-weight: 700; color: var(--primary-blue);">n8n Workflows</span><br>
+                  <span style="font-size:16px; color: var(--text-muted);">Automation (5678)</span>
+                </div>
+                <div style="background: white; border: 2px solid var(--primary-blue); border-radius: 8px; padding: 15px;">
+                  <span style="font-weight: 700; color: var(--primary-blue);">pgAdmin</span><br>
+                  <span style="font-size:16px; color: var(--text-muted);">DB Monitor (5050)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer class="slide-footer">
+          <div class="footer-text">DevOps trong phát triển phần mềm - Nhóm: UIT BUDDY</div>
+          <div class="slide-counter">Trang <span class="current-slide-num"></span> / <span class="total-slides-num"></span></div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- SLIDE 18: GitOps: Tách biệt Code và Config -->
+    <div class="slide">
+      <header class="slide-header">
+        <div class="header-left">
+          <button class="menu-toggle">☰</button>
+          <img src="../images/uit-logo.png" alt="UIT Logo" class="uit-logo">
+          <div class="project-brand">
+            <span class="brand-title">UIT Buddy</span>
+            <span class="brand-tag">GitOps</span>
+          </div>
+        </div>
+        <h2 class="slide-title">GitOps: Tách biệt Code và Config</h2>
+        <div class="progress-bar"></div>
+      </header>
+      <div class="slide-body">
+        <div class="grid-2">
+          <div class="flex-col">
+            <p class="text-highlight">Tổ chức mã nguồn thành các kho lưu trữ (repos) riêng biệt:</p>
+            <table>
+              <thead>
+                <tr>
+                  <th>Repository</th>
+                  <th>Mục đích sử dụng</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>UIT-Buddy-Backend</strong></td>
+                  <td>Lưu trữ mã nguồn ứng dụng và quy trình CI pipeline.</td>
+                </tr>
+                <tr>
+                  <td><strong>UIT-Buddy-GitOps-Manifests</strong></td>
+                  <td>Lưu trữ file docker-compose prod, cấu hình env.</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="card card-accent">
+              <ul class="bullet-list" style="margin-bottom: 0;">
+                <li>🔒 Đảm bảo file cấu hình production và các secrets bí mật không nằm chung với code ứng dụng.</li>
+                <li>🔄 Sửa đổi file cấu hình deploy không bắt buộc CI phải build lại Docker image từ đầu.</li>
+                <li>📜 Tạo ra lịch sử audit hạ tầng (infrastructure audit trail) rõ ràng, độc lập.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="image-container" style="max-height: 520px;">
+            <img src="../images/gitop-repo.png" alt="GitOps Repo Layout" class="slide-image">
+          </div>
+        </div>
+        <footer class="slide-footer">
+          <div class="footer-text">DevOps trong phát triển phần mềm - Nhóm: UIT BUDDY</div>
+          <div class="slide-counter">Trang <span class="current-slide-num"></span> / <span class="total-slides-num"></span></div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- SLIDE 19: CI/CD Philosophy: Branch Protection -->
+    <div class="slide">
+      <header class="slide-header">
+        <div class="header-left">
+          <button class="menu-toggle">☰</button>
+          <img src="../images/uit-logo.png" alt="UIT Logo" class="uit-logo">
+          <div class="project-brand">
+            <span class="brand-title">UIT Buddy</span>
+            <span class="brand-tag">Quy trình</span>
+          </div>
+        </div>
+        <h2 class="slide-title">CI/CD Philosophy: Branch Protection</h2>
+        <div class="progress-bar"></div>
+      </header>
+      <div class="slide-body">
+        <div class="grid-2">
+          <div class="flex-col">
+            <div class="card">
+              <h3>Nguyên tắc cốt lõi</h3>
+              <p>Không có bất kỳ dòng code nào được đẩy trực tiếp vào nhánh <code>main</code> mà chưa được hệ thống tự động kiểm tra.</p>
+            </div>
+            <div class="card card-accent">
+              <h3>Cơ chế rào cản (Gatekeeping)</h3>
+              <p>Chỉ khi tất cả các kiểm tra của GitHub Actions CI vượt qua thành công (Format, Lints, Unit Tests, Build), nút <strong>Merge Pull Request</strong> mới được mở khóa.</p>
+            </div>
+          </div>
+          <!-- HTML Diagram of Branch Protection -->
+          <div class="diagram-container">
+            <div class="flex-col" style="align-items: center; width: 100%;">
+              <div style="background-color: white; border: 2px dashed #94a3b8; border-radius: 8px; padding: 15px; width: 100%; text-align: center;">
+                <span style="font-weight: 700; color: var(--text-muted);">Feature Branch</span>
+              </div>
+              <div class="flow-arrow">▼</div>
+              <div style="background-color: var(--light-blue); border: 2px solid var(--accent-blue); border-radius: 8px; padding: 20px; width: 100%; text-align: center; box-shadow: var(--shadow-sm);">
+                <span style="font-weight: 800; color: var(--primary-blue);">Pull Request (to main)</span>
+                <div style="margin-top: 10px; font-size: 16px; color: var(--text-dark); text-align: left; display: inline-block;">
+                  <div>⬜ Run Code Format check</div>
+                  <div>⬜ Run Unit Tests check</div>
+                  <div>⬜ Verify application Build</div>
+                </div>
+              </div>
+              <div class="flow-arrow">▼</div>
+              <div style="background-color: #d1fae5; border: 2px solid #10b981; border-radius: 8px; padding: 15px; width: 100%; text-align: center;">
+                <span style="font-weight: 700; color: #065f46;">Merge approved & CD Triggered 🚀</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer class="slide-footer">
+          <div class="footer-text">DevOps trong phát triển phần mềm - Nhóm: UIT BUDDY</div>
+          <div class="slide-counter">Trang <span class="current-slide-num"></span> / <span class="total-slides-num"></span></div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- SLIDE 20: Backend CI Pipeline: Trigger -->
+    <div class="slide">
+      <header class="slide-header">
+        <div class="header-left">
+          <button class="menu-toggle">☰</button>
+          <img src="../images/uit-logo.png" alt="UIT Logo" class="uit-logo">
+          <div class="project-brand">
+            <span class="brand-title">UIT Buddy</span>
+            <span class="brand-tag">CI Trigger</span>
+          </div>
+        </div>
+        <h2 class="slide-title">Backend CI Pipeline: Trigger</h2>
+        <div class="progress-bar"></div>
+      </header>
+      <div class="slide-body">
+        <div class="grid-2">
+          <div class="flex-col">
+            <div class="card">
+              <h3>Điều kiện kích hoạt Pipeline</h3>
+              <ul class="bullet-list">
+                <li><strong>pull_request:</strong> Khi tạo PR nhắm vào <code>main</code>, chạy CI để kiểm định và ngăn merge code lỗi.</li>
+                <li><strong>push:</strong> Khi code được merge thành công vào <code>main</code>, chạy CI và tiến hành build Docker Image cho deploy.</li>
+              </ul>
+            </div>
+            <pre style="margin-top:0px; padding:15px; font-size:16px;"><code class="highlight-yaml"><span class="key">on:</span>
+  <span class="key">push:</span>
+    <span class="key">branches:</span> ["main"]
+  <span class="key">pull_request:</span>
+    <span class="key">branches:</span> ["main"]</code></pre>
+          </div>
+          <div class="image-container" style="max-height: 520px;">
+            <img src="../images/backend-ci-workflows.png" alt="Backend CI Workflows" class="slide-image">
+          </div>
+        </div>
+        <footer class="slide-footer">
+          <div class="footer-text">DevOps trong phát triển phần mềm - Nhóm: UIT BUDDY</div>
+          <div class="slide-counter">Trang <span class="current-slide-num"></span> / <span class="total-slides-num"></span></div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- SLIDE 21: Backend CI Pipeline: 3 Jobs -->
+    <div class="slide">
+      <header class="slide-header">
+        <div class="header-left">
+          <button class="menu-toggle">☰</button>
+          <img src="../images/uit-logo.png" alt="UIT Logo" class="uit-logo">
+          <div class="project-brand">
+            <span class="brand-title">UIT Buddy</span>
+            <span class="brand-tag">CI Jobs</span>
+          </div>
+        </div>
+        <h2 class="slide-title">Backend CI Pipeline: 3 Jobs</h2>
+        <div class="progress-bar"></div>
+      </header>
+      <div class="slide-body">
+        <div class="grid-2">
+          <div class="flex-col">
+            <div class="card">
+              <h3>Chuỗi liên kết các Job</h3>
+              <p>Mỗi giai đoạn được tổ chức thành 1 Job độc lập, có cơ chế phụ thuộc (<code>needs</code>) tuần tự để tối ưu tài nguyên:</p>
+              <ul class="bullet-list" style="margin-top: 10px;">
+                <li><strong>Job 1: Format & Import Check</strong> - Kiểm tra định dạng code.</li>
+                <li><strong>Job 2: Build & Unit Tests</strong> (Cần Job 1) - Biên dịch dự án, chạy test maven và xuất báo cáo kết quả.</li>
+                <li><strong>Job 3: Build & Push Docker Image</strong> (Cần Job 2) - Đăng nhập GHCR và build-push image (chỉ chạy khi push/merge vào main).</li>
+              </ul>
+            </div>
+          </div>
+          <div class="image-container" style="max-height: 520px;">
+            <img src="../images/backend-ci-graph.png" alt="Backend CI Job Graph" class="slide-image">
+          </div>
+        </div>
+        <footer class="slide-footer">
+          <div class="footer-text">DevOps trong phát triển phần mềm - Nhóm: UIT BUDDY</div>
+          <div class="slide-counter">Trang <span class="current-slide-num"></span> / <span class="total-slides-num"></span></div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- SLIDE 22: Backend CI: Job 1 — Format Check -->
+    <div class="slide">
+      <header class="slide-header">
+        <div class="header-left">
+          <button class="menu-toggle">☰</button>
+          <img src="../images/uit-logo.png" alt="UIT Logo" class="uit-logo">
+          <div class="project-brand">
+            <span class="brand-title">UIT Buddy</span>
+            <span class="brand-tag">CI Details</span>
+          </div>
+        </div>
+        <h2 class="slide-title">Backend CI: Job 1 — Format Check</h2>
+        <div class="progress-bar"></div>
+      </header>
+      <div class="slide-body">
+        <div class="grid-2">
+          <div class="flex-col">
+            <div class="card">
+              <h3>Kiểm tra định dạng mã nguồn</h3>
+              <p>Mã nguồn Java phải tuân thủ nghiêm ngặt chuẩn format chung trước khi cho phép biên dịch.</p>
+            </div>
+            <div class="card card-accent">
+              <h3>Lệnh kiểm tra</h3>
+              <pre style="margin: 0; padding: 15px; font-size:22px;"><code>./mvnw net.revelc.code.formatter:formatter-maven-plugin:validate</code></pre>
+            </div>
+            <p class="text-highlight" style="font-size: 28px;">❌ Chỉ cần một file sai định dạng, Job 1 sẽ báo đỏ và dừng toàn bộ pipeline.</p>
+          </div>
+          <div class="image-container" style="max-height: 520px;">
+            <img src="../images/backend-ci-workflows.png" alt="Format Check UI" class="slide-image">
+          </div>
+        </div>
+        <footer class="slide-footer">
+          <div class="footer-text">DevOps trong phát triển phần mềm - Nhóm: UIT BUDDY</div>
+          <div class="slide-counter">Trang <span class="current-slide-num"></span> / <span class="total-slides-num"></span></div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- SLIDE 22b: Backend CI: Job 2 — Build & Unit Test -->
+    <div class="slide">
+      <header class="slide-header">
+        <div class="header-left">
+          <button class="menu-toggle">☰</button>
+          <img src="../images/uit-logo.png" alt="UIT Logo" class="uit-logo">
+          <div class="project-brand">
+            <span class="brand-title">UIT Buddy</span>
+            <span class="brand-tag">CI Details</span>
+          </div>
+        </div>
+        <h2 class="slide-title">Backend CI: Job 2 — Build & Unit Test</h2>
+        <div class="progress-bar"></div>
+      </header>
+      <div class="slide-body">
+        <div class="grid-2">
+          <div class="flex-col">
+            <div class="card">
+              <h3>Biên dịch & Chạy Unit Tests</h3>
+              <p>Mã nguồn được biên dịch và toàn bộ các bộ kiểm thử tự động (unit tests) được kích hoạt để đảm bảo tính logic.</p>
+            </div>
+            <div class="card card-accent">
+              <h3>Lệnh thực hiện</h3>
+              <pre style="margin: 0; padding: 15px; font-size:22px;"><code>./mvnw test -DfailIfNoTests=false</code></pre>
+            </div>
+            <div style="background-color: #fee2e2; border-left: 6px solid #ef4444; padding: 20px; border-radius: 8px;">
+              <p style="font-size: 26px; color: #991b1b; font-weight:600; margin:0;">🚨 Unit Test thất bại ➔ CI bị đánh dấu ĐỎ ➔ Khóa tính năng Merge Pull Request!</p>
+            </div>
+          </div>
+          <div class="image-container" style="max-height: 520px;">
+            <img src="../images/backend-ci-graph.png" alt="Test Graph UI" class="slide-image">
+          </div>
+        </div>
+        <footer class="slide-footer">
+          <div class="footer-text">DevOps trong phát triển phần mềm - Nhóm: UIT BUDDY</div>
+          <div class="slide-counter">Trang <span class="current-slide-num"></span> / <span class="total-slides-num"></span></div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- SLIDE 23: Backend CI: Build & Push Docker Image -->
+    <div class="slide">
+      <header class="slide-header">
+        <div class="header-left">
+          <button class="menu-toggle">☰</button>
+          <img src="../images/uit-logo.png" alt="UIT Logo" class="uit-logo">
+          <div class="project-brand">
+            <span class="brand-title">UIT Buddy</span>
+            <span class="brand-tag">Image Registry</span>
+          </div>
+        </div>
+        <h2 class="slide-title">Backend CI: Build & Push Image</h2>
+        <div class="progress-bar"></div>
+      </header>
+      <div class="slide-body">
+        <div class="grid-2">
+          <div class="flex-col">
+            <div class="card">
+              <h3>Đóng gói & Phân phối</h3>
+              <pre style="margin-top:0px; padding:15px; font-size:16px;"><code class="highlight-yaml">- <span class="key">name:</span> Log in to GHCR
+  <span class="key">uses:</span> docker/login-action@v3
+  <span class="key">with:</span>
+    <span class="key">registry:</span> ghcr.io
+    <span class="key">password:</span> ${{ secrets.GITHUB_TOKEN }}
+
+- <span class="key">name:</span> Build and push
+  <span class="key">uses:</span> docker/build-push-action@v5
+  <span class="key">with:</span>
+    <span class="key">push:</span> true
+    <span class="key">tags:</span> |
+      ghcr.io/uit-buddy/backend:${{ github.sha }}
+      ghcr.io/uit-buddy/backend:latest</code></pre>
+            </div>
+          </div>
+          <div class="flex-col">
+            <div class="card card-accent">
+              <h3>Cơ chế Gắn Tags</h3>
+              <p>Mỗi lượt build thành công được gắn 2 tags:</p>
+              <ul class="bullet-list">
+                <li><code>{commit-SHA}</code>: Cố định cho đợt build cụ thể (phục vụ rollback khi có lỗi).</li>
+                <li><code>latest</code>: Luôn trỏ về phiên bản mới nhất vừa release.</li>
+              </ul>
+            </div>
+            <div class="image-container" style="max-height: 250px;">
+              <img src="../images/backend-ghrc-packages.png" alt="Backend GHCR Packages List" class="slide-image">
+            </div>
+          </div>
+        </div>
+        <footer class="slide-footer">
+          <div class="footer-text">DevOps trong phát triển phần mềm - Nhóm: UIT BUDDY</div>
+          <div class="slide-counter">Trang <span class="current-slide-num"></span> / <span class="total-slides-num"></span></div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- SLIDE 24: GitHub Container Registry (GHCR) -->
+    <div class="slide">
+      <header class="slide-header">
+        <div class="header-left">
+          <button class="menu-toggle">☰</button>
+          <img src="../images/uit-logo.png" alt="UIT Logo" class="uit-logo">
+          <div class="project-brand">
+            <span class="brand-title">UIT Buddy</span>
+            <span class="brand-tag">GHCR</span>
+          </div>
+        </div>
+        <h2 class="slide-title">GitHub Container Registry (GHCR)</h2>
+        <div class="progress-bar"></div>
+      </header>
+      <div class="slide-body">
+        <div class="grid-2">
+          <div class="flex-col">
+            <p class="text-highlight">Hai repositories ảnh chính được đăng ký trên GHCR:</p>
+            <p>📁 <code>ghcr.io/uit-buddy/backend</code><br>📁 <code>ghcr.io/uit-buddy/ai</code></p>
+            <table>
+              <thead>
+                <tr>
+                  <th>Lợi ích của GHCR</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>✅ Tích hợp trực tiếp và đồng bộ với GitHub Organization.</td>
+                </tr>
+                <tr>
+                  <td>✅ Xác thực an toàn qua token tự động <code>GITHUB_TOKEN</code>.</td>
+                </tr>
+                <tr>
+                  <td>✅ Phân quyền bảo mật chung với cài đặt hiển thị của repo gốc.</td>
+                </tr>
+                <tr>
+                  <td>✅ Không phát sinh thêm chi phí đối với các package public.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="image-container" style="max-height: 520px;">
+            <img src="../images/ghrc-all-packages.png" alt="GHCR Packages" class="slide-image">
+          </div>
+        </div>
+        <footer class="slide-footer">
+          <div class="footer-text">DevOps trong phát triển phần mềm - Nhóm: UIT BUDDY</div>
+          <div class="slide-counter">Trang <span class="current-slide-num"></span> / <span class="total-slides-num"></span></div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- SLIDE 25: Backend CD Pipeline: Trigger -->
+    <div class="slide">
+      <header class="slide-header">
+        <div class="header-left">
+          <button class="menu-toggle">☰</button>
+          <img src="../images/uit-logo.png" alt="UIT Logo" class="uit-logo">
+          <div class="project-brand">
+            <span class="brand-title">UIT Buddy</span>
+            <span class="brand-tag">CD Trigger</span>
+          </div>
+        </div>
+        <h2 class="slide-title">Backend CD Pipeline: Trigger</h2>
+        <div class="progress-bar"></div>
+      </header>
+      <div class="slide-body">
+        <div class="grid-2">
+          <div class="flex-col">
+            <div class="card">
+              <h3>Kích hoạt CD tự động sau CI</h3>
+              <p>CD được trigger tự động ngay sau khi workflow CI của Backend chạy xong và đạt kết quả thành công.</p>
+            </div>
+            <pre style="margin-top:0px; padding:15px; font-size:16px;"><code class="highlight-yaml"><span class="key">on:</span>
+  <span class="key">workflow_run:</span>
+    <span class="key">workflows:</span> ["Backend CI flow"]
+    <span class="key">types:</span> [completed]
+    <span class="key">branches:</span> [main]
+<span class="key">jobs:</span>
+  <span class="key">deploy:</span>
+    <span class="key">if:</span> ${{ workflow_run.conclusion == 'success' }}
+    <span class="key">runs-on:</span> self-hosted <span class="comment"># Chạy trực tiếp trên EC2</span></code></pre>
+          </div>
+          <div class="image-container" style="max-height: 520px;">
+            <img src="../images/backend-cd-flows.png" alt="Backend CD Flows" class="slide-image">
+          </div>
+        </div>
+        <footer class="slide-footer">
+          <div class="footer-text">DevOps trong phát triển phần mềm - Nhóm: UIT BUDDY</div>
+          <div class="slide-counter">Trang <span class="current-slide-num"></span> / <span class="total-slides-num"></span></div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- SLIDE 26: Self-Hosted Runner: Cơ chế hoạt động -->
+    <div class="slide">
+      <header class="slide-header">
+        <div class="header-left">
+          <button class="menu-toggle">☰</button>
+          <img src="../images/uit-logo.png" alt="UIT Logo" class="uit-logo">
+          <div class="project-brand">
+            <span class="brand-title">UIT Buddy</span>
+            <span class="brand-tag">Self-Hosted</span>
+          </div>
+        </div>
+        <h2 class="slide-title">Self-Hosted Runner: Hoạt động</h2>
+        <div class="progress-bar"></div>
+      </header>
+      <div class="slide-body">
+        <div class="grid-2">
+          <div class="flex-col">
+            <div class="card">
+              <h3>Tại sao dùng Self-Hosted Runner?</h3>
+              <p>Giúp thực thi các câu lệnh deploy trực tiếp trên môi trường EC2 mà không cần phải mở cổng SSH hay tạo thêm các phương thức kết nối trung gian kém bảo mật.</p>
+            </div>
+            <div class="card card-accent">
+              <p>Lực lượng chạy runner định kỳ thăm dò (long-polling) lệnh từ GitHub Cloud để nhận nhiệm vụ. EC2 đóng vai trò kép: vừa chạy ứng dụng vừa làm máy chủ triển khai.</p>
+            </div>
+          </div>
+          <!-- HTML Diagram of Runner flow -->
+          <div class="diagram-container">
+            <div class="flex-col" style="align-items: center; width: 100%;">
+              <div class="flow-node" style="background-color: var(--primary-blue); color: white;">GitHub Actions Cloud</div>
+              <div class="flow-arrow">▼ (Kích hoạt CD job)</div>
+              <div class="flow-node" style="border: 2px dashed var(--primary-blue);">
+                Self-Hosted Runner (EC2)
+                <div style="font-size:16px; font-weight: normal; margin-top: 10px; color: var(--text-muted); text-align: left;">
+                  - Git pull repo GitOps-Manifests<br>
+                  - Thiết lập biến env từ secrets<br>
+                  - Triển khai podman-compose
+                </div>
+              </div>
+              <div class="flow-arrow">▼</div>
+              <div class="flow-node" style="background-color: #d1fae5; border-color: #10b981; color: #065f46;">Môi trường Product sẵn sàng</div>
+            </div>
+          </div>
+        </div>
+        <footer class="slide-footer">
+          <div class="footer-text">DevOps trong phát triển phần mềm - Nhóm: UIT BUDDY</div>
+          <div class="slide-counter">Trang <span class="current-slide-num"></span> / <span class="total-slides-num"></span></div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- SLIDE 27: Self-Hosted Runner: Setup tự động -->
+    <div class="slide">
+      <header class="slide-header">
+        <div class="header-left">
+          <button class="menu-toggle">☰</button>
+          <img src="../images/uit-logo.png" alt="UIT Logo" class="uit-logo">
+          <div class="project-brand">
+            <span class="brand-title">UIT Buddy</span>
+            <span class="brand-tag">Runner Auto Setup</span>
+          </div>
+        </div>
+        <h2 class="slide-title">Self-Hosted Runner: Setup tự động</h2>
+        <div class="progress-bar"></div>
+      </header>
+      <div class="slide-body">
+        <div class="grid-2">
+          <div class="flex-col">
+            <div class="card">
+              <h3>EC2 User Data Script</h3>
+              <p>Runner được cài đặt hoàn toàn tự động ngay khi khởi tạo EC2 lần đầu thông qua Terraform:</p>
+            </div>
+            <pre style="margin-top:0px; padding:15px; font-size:14px; max-height: 280px; overflow: auto;"><code>#!/bin/bash
+# 1. Cài đặt Podman & Podman Compose
+apt-get install -y podman podman-compose
+
+# 2. Tạo user riêng chuyên chạy runner
+useradd -m github-runner
+
+# 3. Đăng ký tự động với GitHub Repo
+./config.sh --url https://github.com/UIT-Buddy/... \
+            --token ${runner_token} --unattended
+
+# 4. Cài đặt runner chạy dưới dạng systemd service
+./svc.sh install && ./svc.sh start</code></pre>
+          </div>
+          <div class="flex-col">
+            <div class="card card-accent">
+              <h3>Không cấu hình thủ công</h3>
+              <p>Hệ thống tự động kích hoạt và đưa runner vào trạng thái hoạt động trực tuyến ngay khi bật server.</p>
+            </div>
+            <div style="border: 2px solid var(--border-color); border-radius: 8px; padding: 20px; background-color: #0f172a; color: #10b981; font-family: monospace; font-size: 18px; text-align: center;">
+              ● Runner "Online" - Active & Listening
+            </div>
+          </div>
+        </div>
+        <footer class="slide-footer">
+          <div class="footer-text">DevOps trong phát triển phần mềm - Nhóm: UIT BUDDY</div>
+          <div class="slide-counter">Trang <span class="current-slide-num"></span> / <span class="total-slides-num"></span></div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- SLIDE 28: CD Deploy Flow: Pull Image từ GHCR về EC2 -->
+    <div class="slide">
+      <header class="slide-header">
+        <div class="header-left">
+          <button class="menu-toggle">☰</button>
+          <img src="../images/uit-logo.png" alt="UIT Logo" class="uit-logo">
+          <div class="project-brand">
+            <span class="brand-title">UIT Buddy</span>
+            <span class="brand-tag">CD Flow</span>
+          </div>
+        </div>
+        <h2 class="slide-title">CD Deploy Flow: Pull Image từ GHCR</h2>
+        <div class="progress-bar"></div>
+      </header>
+      <div class="slide-body">
+        <div class="grid-2">
+          <div class="flex-col">
+            <div class="card">
+              <h3>Quy trình kéo gói ứng dụng</h3>
+              <p>Mỗi lần merge code mới, runner kéo phiên bản ảnh chuẩn xác ứng với hash commit (pinned tag) về để triển khai, tránh nhầm lẫn.</p>
+            </div>
+            <div class="card card-accent">
+              <h3>Lệnh triển khai</h3>
+              <p>Cập nhật phiên bản qua container management:</p>
+              <pre style="margin-top:5px; padding:10px; font-size:16px;"><code># Pull và khởi chạy lại container với tag mới
+IMAGE_TAG={SHA} make backend-up</code></pre>
+            </div>
+          </div>
+          <!-- HTML Flowchart of CD Pull -->
+          <div class="diagram-container">
+            <div class="flex-col" style="align-items: center; width: 100%;">
+              <div class="flow-node">CI: Push Image ➔ GHCR</div>
+              <div class="flow-arrow">▼</div>
+              <div class="flow-node" style="background-color: var(--light-blue);">GHCR lưu trữ Image (SHA)</div>
+              <div class="flow-arrow">▼</div>
+              <div class="flow-node" style="background-color: var(--primary-blue); color: white;">EC2: Podman Pull exact Image (SHA)</div>
+              <div class="flow-arrow">▼</div>
+              <div class="flow-node" style="background-color: #d1fae5; border-color: #10b981; color: #065f46;">Khởi chạy lại backend container</div>
+            </div>
+          </div>
+        </div>
+        <footer class="slide-footer">
+          <div class="footer-text">DevOps trong phát triển phần mềm - Nhóm: UIT BUDDY</div>
+          <div class="slide-counter">Trang <span class="current-slide-num"></span> / <span class="total-slides-num"></span></div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- SLIDE 29: CD Deploy: Secret Injection -->
+    <div class="slide">
+      <header class="slide-header">
+        <div class="header-left">
+          <button class="menu-toggle">☰</button>
+          <img src="../images/uit-logo.png" alt="UIT Logo" class="uit-logo">
+          <div class="project-brand">
+            <span class="brand-title">UIT Buddy</span>
+            <span class="brand-tag">Secrets Injection</span>
+          </div>
+        </div>
+        <h2 class="slide-title">CD Deploy: Secret Injection</h2>
+        <div class="progress-bar"></div>
+      </header>
+      <div class="slide-body">
+        <div class="grid-2">
+          <div class="flex-col">
+            <div class="card">
+              <h3>Cấp phát Secrets an toàn tại Runtime</h3>
+              <p>Để tăng tính bảo mật, các file môi trường production và file key không được commit lên Git mà được lưu trong GitHub Secrets và ghi trực tiếp vào đĩa lúc CD chạy:</p>
+            </div>
+            <pre style="margin-top:0px; padding:15px; font-size:14px; max-height: 250px; overflow: auto;"><code class="highlight-yaml"><span class="comment"># Bước 1: Ghi file môi trường production từ GitHub Secret</span>
+- <span class="key">run:</span> printf "%s" "$BACKEND_ENV" > gitops-manifests/backend.env
+
+<span class="comment"># Bước 2: Ghi file credential Firebase Admin SDK</span>
+- <span class="key">run:</span> printf "%s" "$FIREBASE_JSON" > gitops-manifests/firebase.json
+
+<span class="comment"># Bước 3: Deploy</span>
+- <span class="key">run:</span> IMAGE_TAG=${{ github.sha }} make backend-up</code></pre>
+          </div>
+          <div class="flex-col">
+            <div class="image-container" style="max-height: 480px;">
+              <img src="../images/github-action-secret.png" alt="GitHub Secrets Console" class="slide-image">
+            </div>
+          </div>
+        </div>
+        <footer class="slide-footer">
+          <div class="footer-text">DevOps trong phát triển phần mềm - Nhóm: UIT BUDDY</div>
+          <div class="slide-counter">Trang <span class="current-slide-num"></span> / <span class="total-slides-num"></span></div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- SLIDE 30: Frontend CI Pipeline -->
+    <div class="slide">
+      <header class="slide-header">
+        <div class="header-left">
+          <button class="menu-toggle">☰</button>
+          <img src="../images/uit-logo.png" alt="UIT Logo" class="uit-logo">
+          <div class="project-brand">
+            <span class="brand-title">UIT Buddy</span>
+            <span class="brand-tag">Frontend CI</span>
+          </div>
+        </div>
+        <h2 class="slide-title">Frontend CI Pipeline</h2>
+        <div class="progress-bar"></div>
+      </header>
+      <div class="slide-body">
+        <div class="grid-2">
+          <div class="flex-col">
+            <div class="card">
+              <h3>Job 1 — Kiểm định (PR Trigger)</h3>
+              <p>Mỗi PR nhắm vào <code>main</code> buộc phải chạy quy trình kiểm định chất lượng mã nguồn:</p>
+              <pre style="margin-top:10px; padding:15px; font-size:16px; background-color: #0f172a; color: white;"><code>Setup Flutter 3.38.6
+➔ flutter pub get                  # Cài đặt dependencies
+➔ dart run build_runner            # Sinh code tự động
+➔ dart format --set-exit-if-changed # Kiểm tra định dạng
+➔ flutter analyze --fatal-warnings  # Kiểm lint & cảnh báo
+➔ flutter test                      # Chạy Unit Tests</code></pre>
+            </div>
+          </div>
+          <div class="image-container" style="max-height: 520px;">
+            <img src="../images/frontend-ci-flows.png" alt="Frontend CI Flows Screenshot" class="slide-image">
+          </div>
+        </div>
+        <footer class="slide-footer">
+          <div class="footer-text">DevOps trong phát triển phần mềm - Nhóm: UIT BUDDY</div>
+          <div class="slide-counter">Trang <span class="current-slide-num"></span> / <span class="total-slides-num"></span></div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- SLIDE 31: Frontend CI: Build & Upload to Firebase -->
+    <div class="slide">
+      <header class="slide-header">
+        <div class="header-left">
+          <button class="menu-toggle">☰</button>
+          <img src="../images/uit-logo.png" alt="UIT Logo" class="uit-logo">
+          <div class="project-brand">
+            <span class="brand-title">UIT Buddy</span>
+            <span class="brand-tag">Frontend Deploy</span>
+          </div>
+        </div>
+        <h2 class="slide-title">Frontend CI: Build & Upload to Firebase</h2>
+        <div class="progress-bar"></div>
+      </header>
+      <div class="slide-body">
+        <div class="grid-2">
+          <div class="flex-col">
+            <div class="card">
+              <h3>Job 2 — Biên dịch & Phân phối</h3>
+              <p>Chỉ kích hoạt khi đẩy/merge code vào nhánh <code>main</code>:</p>
+              <pre style="margin-top:10px; padding:15px; font-size:14px; background-color:#0f172a; color:white; overflow:auto; max-height:200px;"><code>Setup Flutter ➔ pub get
+➔ Inject google-services.json & .env (từ GitHub Secrets)
+➔ Giải mã Keystore từ Base64 để ký app (signing keys)
+➔ flutter build apk --release --build-name=v1.0.${RUN_NUMBER}
+➔ Upload file APK lên Firebase App Distribution (nhóm: tester)</code></pre>
+            </div>
+            <div class="card card-accent">
+              <p><strong>Cơ chế đặt Version APK:</strong> <code>v1.0.42-2026-05-25</code> (Mã build của GHA + thời gian build).</p>
+            </div>
+          </div>
+          <div class="grid-2" style="gap:20px;">
+            <div class="image-container" style="max-height: 250px;">
+              <img src="../images/firebase-app-distribution.png" alt="Firebase App Distribution" class="slide-image">
+            </div>
+            <div class="image-container" style="max-height: 250px;">
+              <img src="../images/firebase-app-tester-group.png" alt="Firebase Tester Groups" class="slide-image">
+            </div>
+          </div>
+        </div>
+        <footer class="slide-footer">
+          <div class="footer-text">DevOps trong phát triển phần mềm - Nhóm: UIT BUDDY</div>
+          <div class="slide-counter">Trang <span class="current-slide-num"></span> / <span class="total-slides-num"></span></div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- SLIDE 32: Full CI/CD Overview (Backend) -->
+    <div class="slide">
+      <header class="slide-header">
+        <div class="header-left">
+          <button class="menu-toggle">☰</button>
+          <img src="../images/uit-logo.png" alt="UIT Logo" class="uit-logo">
+          <div class="project-brand">
+            <span class="brand-title">UIT Buddy</span>
+            <span class="brand-tag">Backend Map</span>
+          </div>
+        </div>
+        <h2 class="slide-title">Full CI/CD Overview (Backend)</h2>
+        <div class="progress-bar"></div>
+      </header>
+      <div class="slide-body">
+        <div class="diagram-container" style="padding: 10px;">
+          <div class="flex-col" style="width: 100%; align-items: center; justify-content: center; height: 100%;">
+            <div class="flow-chart" style="width: 100%; justify-content: space-around;">
+              <div class="flex-col" style="align-items: center; gap: 10px;">
+                <div style="background-color: var(--primary-blue); color: white; border-radius: 8px; padding: 15px; font-weight:700; text-align:center; min-width: 180px;">
+                  1. Developer
+                </div>
+                <div style="font-size:16px; color: var(--text-muted);">Viết code & Đẩy PR</div>
+              </div>
+              <div class="flow-arrow">➔</div>
+              <div class="flex-col" style="align-items: center; gap: 10px;">
+                <div style="background-color: var(--light-blue); border: 2px solid var(--primary-blue); border-radius: 8px; padding: 15px; font-weight:700; text-align:center; min-width: 200px;">
+                  2. GitHub Actions CI
+                </div>
+                <div style="font-size:16px; color: var(--text-muted); text-align:center;">Format check ➔ Unit test ➔ Docker build</div>
+              </div>
+              <div class="flow-arrow">➔</div>
+              <div class="flex-col" style="align-items: center; gap: 10px;">
+                <div style="background-color: var(--primary-blue); color: white; border-radius: 8px; padding: 15px; font-weight:700; text-align:center; min-width: 180px;">
+                  3. GHCR Registry
+                </div>
+                <div style="font-size:16px; color: var(--text-muted);">Lưu trữ Docker Image</div>
+              </div>
+              <div class="flow-arrow">➔</div>
+              <div class="flex-col" style="align-items: center; gap: 10px;">
+                <div style="background-color: var(--light-blue); border: 2px dashed var(--primary-blue); border-radius: 8px; padding: 15px; font-weight:700; text-align:center; min-width: 220px;">
+                  4. CD (Runner on EC2)
+                </div>
+                <div style="font-size:16px; color: var(--text-muted); text-align:center;">Kéo Image (SHA) ➔ Triển khai</div>
+              </div>
+              <div class="flow-arrow">➔</div>
+              <div class="flex-col" style="align-items: center; gap: 10px;">
+                <div style="background-color: #d1fae5; border: 2px solid #10b981; color: #065f46; border-radius: 8px; padding: 15px; font-weight:700; text-align:center; min-width: 180px;">
+                  5. Production
+                </div>
+                <div style="font-size:16px; color: #047857;">Containers chạy ổn định</div>
+              </div>
+            </div>
+            <div class="card card-accent" style="width: 80%; text-align: center; margin-top: 30px;">
+              <p style="font-size: 20px; font-weight: 600; margin: 0;">Khép kín tự động hoàn toàn: Từ lúc code đẩy lên Git cho đến khi container phiên bản mới chạy thực tế trên cloud AWS.</p>
+            </div>
+          </div>
+        </div>
+        <footer class="slide-footer">
+          <div class="footer-text">DevOps trong phát triển phần mềm - Nhóm: UIT BUDDY</div>
+          <div class="slide-counter">Trang <span class="current-slide-num"></span> / <span class="total-slides-num"></span></div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- SLIDE 33: Full CI/CD Overview (Frontend) -->
+    <div class="slide">
+      <header class="slide-header">
+        <div class="header-left">
+          <button class="menu-toggle">☰</button>
+          <img src="../images/uit-logo.png" alt="UIT Logo" class="uit-logo">
+          <div class="project-brand">
+            <span class="brand-title">UIT Buddy</span>
+            <span class="brand-tag">Frontend Map</span>
+          </div>
+        </div>
+        <h2 class="slide-title">Full CI/CD Overview (Frontend)</h2>
+        <div class="progress-bar"></div>
+      </header>
+      <div class="slide-body">
+        <div class="diagram-container" style="padding: 10px;">
+          <div class="flex-col" style="width: 100%; align-items: center; justify-content: center; height: 100%;">
+            <div class="flow-chart" style="width: 100%; justify-content: space-around;">
+              <div class="flex-col" style="align-items: center; gap: 10px;">
+                <div style="background-color: var(--primary-blue); color: white; border-radius: 8px; padding: 15px; font-weight:700; text-align:center; min-width: 180px;">
+                  1. Developer
+                </div>
+                <div style="font-size:16px; color: var(--text-muted);">Code mới ➔ Pull Request</div>
+              </div>
+              <div class="flow-arrow">➔</div>
+              <div class="flex-col" style="align-items: center; gap: 10px;">
+                <div style="background-color: var(--light-blue); border: 2px solid var(--primary-blue); border-radius: 8px; padding: 15px; font-weight:700; text-align:center; min-width: 220px;">
+                  2. CI Kiểm định
+                </div>
+                <div style="font-size:16px; color: var(--text-muted); text-align:center;">Flutter Lints ➔ Format check ➔ Unit tests</div>
+              </div>
+              <div class="flow-arrow">➔</div>
+              <div class="flex-col" style="align-items: center; gap: 10px;">
+                <div style="background-color: var(--primary-blue); color: white; border-radius: 8px; padding: 15px; font-weight:700; text-align:center; min-width: 200px;">
+                  3. CI Đóng gói
+                </div>
+                <div style="font-size:16px; color: var(--text-muted); text-align:center;">Ký keystore ➔ Build Release APK</div>
+              </div>
+              <div class="flow-arrow">➔</div>
+              <div class="flex-col" style="align-items: center; gap: 10px;">
+                <div style="background-color: #d1fae5; border: 2px solid #10b981; color: #065f46; border-radius: 8px; padding: 15px; font-weight:700; text-align:center; min-width: 220px;">
+                  4. Firebase App Dist
+                </div>
+                <div style="font-size:16px; color: #047857; text-align:center;">Phân phối file cài APK đến các Testers</div>
+              </div>
+            </div>
+            <div class="card card-accent" style="width: 80%; text-align: center; margin-top: 30px;">
+              <p style="font-size: 20px; font-weight: 600; margin: 0;">Giúp rút ngắn chu kỳ thử nghiệm sản phẩm, thu thập phản hồi của kiểm thử viên (tester) cực kỳ nhanh chóng.</p>
+            </div>
+          </div>
+        </div>
+        <footer class="slide-footer">
+          <div class="footer-text">DevOps trong phát triển phần mềm - Nhóm: UIT BUDDY</div>
+          <div class="slide-counter">Trang <span class="current-slide-num"></span> / <span class="total-slides-num"></span></div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- SLIDE 34: Tổng kết DevOps Practices (Phần 1) -->
+    <div class="slide">
+      <header class="slide-header">
+        <div class="header-left">
+          <button class="menu-toggle">☰</button>
+          <img src="../images/uit-logo.png" alt="UIT Logo" class="uit-logo">
+          <div class="project-brand">
+            <span class="brand-title">UIT Buddy</span>
+            <span class="brand-tag">Tổng kết</span>
+          </div>
+        </div>
+        <h2 class="slide-title">Tổng kết DevOps Practices (Phần 1)</h2>
+        <div class="progress-bar"></div>
+      </header>
+      <div class="slide-body">
+        <div style="overflow-y: auto; height: 100%; display: flex; align-items: center;">
+          <table>
+            <thead>
+              <tr>
+                <th style="width: 35%;">Phương pháp (Practice)</th>
+                <th>Công cụ sử dụng (Tools)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Infrastructure as Code (IaC)</strong></td>
+                <td>Terraform quản trị toàn bộ tài nguyên AWS Cloud</td>
+              </tr>
+              <tr>
+                <td><strong>Containerization</strong></td>
+                <td>Docker Multi-stage build tối ưu size + Docker Compose</td>
+              </tr>
+              <tr>
+                <td><strong>Container Registry</strong></td>
+                <td>GitHub Container Registry (GHCR) phân phối gói an toàn</td>
+              </tr>
+              <tr>
+                <td><strong>CI Pipelines</strong></td>
+                <td>GitHub Actions kiểm lint, format code, chạy unit tests, build image</td>
+              </tr>
+              <tr>
+                <td><strong>CD Pipelines</strong></td>
+                <td>GitHub Actions Self-hosted runner kéo image về triển khai trên EC2</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <footer class="slide-footer">
+          <div class="footer-text">DevOps trong phát triển phần mềm - Nhóm: UIT BUDDY</div>
+          <div class="slide-counter">Trang <span class="current-slide-num"></span> / <span class="total-slides-num"></span></div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- SLIDE 34b: Tổng kết DevOps Practices (Phần 2) -->
+    <div class="slide">
+      <header class="slide-header">
+        <div class="header-left">
+          <button class="menu-toggle">☰</button>
+          <img src="../images/uit-logo.png" alt="UIT Logo" class="uit-logo">
+          <div class="project-brand">
+            <span class="brand-title">UIT Buddy</span>
+            <span class="brand-tag">Tổng kết</span>
+          </div>
+        </div>
+        <h2 class="slide-title">Tổng kết DevOps Practices (Phần 2)</h2>
+        <div class="progress-bar"></div>
+      </header>
+      <div class="slide-body">
+        <div style="overflow-y: auto; height: 100%; display: flex; align-items: center;">
+          <table>
+            <thead>
+              <tr>
+                <th style="width: 35%;">Phương pháp (Practice)</th>
+                <th>Công cụ sử dụng (Tools)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>GitOps</strong></td>
+                <td>Tách biệt hoàn toàn mã nguồn (Code) và file cấu hình deploy (Config manifests)</td>
+              </tr>
+              <tr>
+                <td><strong>Secrets Management</strong></td>
+                <td>GitHub Secrets (môi trường CI/CD) + AWS Secrets Manager (môi trường Server)</td>
+              </tr>
+              <tr>
+                <td><strong>App Distribution</strong></td>
+                <td>Tự động đóng gói APK ký Keystore và đẩy lên Firebase App Distribution</td>
+              </tr>
+              <tr>
+                <td><strong>Branch Protection</strong></td>
+                <td>Rào cản chất lượng code: CI thành công bắt buộc mới cho phép merge</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <footer class="slide-footer">
+          <div class="footer-text">DevOps trong phát triển phần mềm - Nhóm: UIT BUDDY</div>
+          <div class="slide-counter">Trang <span class="current-slide-num"></span> / <span class="total-slides-num"></span></div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- SLIDE 35: Cảm ơn & Q&A -->
+    <div class="slide">
+      <div class="slide-qa-page" style="height: 100%; width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+        <h1 style="font-size: 80px; font-weight: 800; margin-bottom: 20px;">XIN CẢM ƠN!</h1>
+        <p style="font-size: 36px; color: var(--accent-blue); margin-bottom: 50px; font-weight:500;">Câu hỏi & Thảo luận (Q&A) 🎤</p>
+        <div style="background-color: rgba(255,255,255,0.1); padding: 30px 60px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.2); max-width: 800px; backdrop-filter: blur(10px);">
+          <p style="font-size: 24px; color: white; line-height: 1.6;">Cảm ơn thầy và các bạn đã chú ý lắng nghe bài thuyết trình về quy trình và kiến trúc DevOps của dự án UIT Buddy.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Slide Control Overlay Buttons -->
+  <div class="controls-overlay">
+    <button class="control-btn" id="prev-btn" title="Slide trước">◀</button>
+    <button class="control-btn" id="next-btn" title="Slide tiếp theo">▶</button>
+  </div>
+
+</body>
+</html>
