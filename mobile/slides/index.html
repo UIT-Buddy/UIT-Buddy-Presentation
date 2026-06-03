@@ -1,0 +1,1601 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UIT Buddy - Mobile Programming Presentation</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- Slide Menu Drawer -->
+  <div class="slide-menu" id="slide-menu"></div>
+
+  <!-- Slide Container (Scaled 16:9 viewport) -->
+  <div class="slide-container">
+
+    <!-- SLIDE 1: Trang bìa -->
+    <div class="slide active">
+      <div class="slide-title-page-creative">
+        <div class="bg-pattern bg-pattern-1"></div>
+        <div class="bg-pattern bg-pattern-2"></div>
+        <div class="title-card">
+          <img src="../images/uit-logo.png" alt="UIT Logo" class="title-page-logo">
+          <h1 class="title-page-main-creative">UIT BUDDY</h1>
+          <p class="title-page-sub-creative">Ứng dụng đồng hành cùng sinh viên UIT trong học tập</p>
+          <div class="title-divider"></div>
+          <p class="title-page-type">BÀI THUYẾT TRÌNH MÔN LẬP TRÌNH TRÊN THIẾT BỊ DI ĐỘNG</p>
+          <div class="title-page-meta-creative">
+            <div class="meta-item">
+              <span class="meta-label">Môn học</span>
+              <span class="meta-value">Lập trình trên thiết bị di động - SE346.Q22</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Nhóm</span>
+              <span class="meta-value">UIT BUDDY</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Giảng viên hướng dẫn</span>
+              <span class="meta-value">Nguyễn Tấn Toàn</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SLIDE 2: Giới thiệu thành viên (4 Cards in 1 Row) -->
+    <div class="slide">
+      <header class="slide-header">
+        <div class="header-left">
+          <button class="menu-toggle">☰</button>
+          <img src="../images/uit-logo.png" alt="UIT Logo" class="uit-logo">
+          <div class="project-brand">
+            <span class="brand-title">UIT Buddy</span>
+            <span class="brand-tag">Thành viên</span>
+          </div>
+        </div>
+        <h2 class="slide-title">Giới thiệu thành viên</h2>
+        <div class="progress-bar"></div>
+      </header>
+      <div class="slide-body">
+        <div class="profile-grid">
+          <div class="profile-card">
+            <div class="profile-photo-container">
+              <div class="profile-photo-placeholder">
+                <span class="placeholder-icon">👤</span>
+                <span class="placeholder-text">Phan Đình Minh</span>
+              </div>
+            </div>
+            <div class="profile-name">Phan Đình Minh</div>
+            <div class="profile-id">MSSV: 23520949</div>
+            <div class="profile-role">Frontend + DevOps</div>
+          </div>
+          <div class="profile-card">
+            <div class="profile-photo-container">
+              <div class="profile-photo-placeholder">
+                <span class="placeholder-icon">👤</span>
+                <span class="placeholder-text">Tăng Minh Hoàng</span>
+              </div>
+            </div>
+            <div class="profile-name">Tăng Minh Hoàng</div>
+            <div class="profile-id">MSSV: 23520941</div>
+            <div class="profile-role">Frontend</div>
+          </div>
+          <div class="profile-card">
+            <div class="profile-photo-container">
+              <div class="profile-photo-placeholder">
+                <span class="placeholder-icon">👤</span>
+                <span class="placeholder-text">Trần Anh Tuấn</span>
+              </div>
+            </div>
+            <div class="profile-name">Trần Anh Tuấn</div>
+            <div class="profile-id">MSSV: 23521409</div>
+            <div class="profile-role">Backend</div>
+          </div>
+          <div class="profile-card">
+            <div class="profile-photo-container">
+              <div class="profile-photo-placeholder">
+                <span class="placeholder-icon">👤</span>
+                <span class="placeholder-text">Võ Minh Tiến</span>
+              </div>
+            </div>
+            <div class="profile-name">Võ Minh Tiến</div>
+            <div class="profile-id">MSSV: 24521784</div>
+            <div class="profile-role">Backend + AI + DevOps</div>
+          </div>
+        </div>
+        <footer class="slide-footer">
+          <div class="footer-text">Lập trình trên thiết bị di động - Nhóm: UIT BUDDY</div>
+          <div class="slide-counter">Trang <span class="current-slide-num"></span> / <span class="total-slides-num"></span></div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- SLIDE 3: Giới thiệu đề tài — Vấn đề đặt ra -->
+    <div class="slide">
+      <header class="slide-header">
+        <div class="header-left">
+          <button class="menu-toggle">☰</button>
+          <img src="../images/uit-logo.png" alt="UIT Logo" class="uit-logo">
+          <div class="project-brand">
+            <span class="brand-title">UIT Buddy</span>
+            <span class="brand-tag">Đề tài</span>
+          </div>
+        </div>
+        <h2 class="slide-title">Giới thiệu đề tài: Vấn đề đặt ra</h2>
+        <div class="progress-bar"></div>
+      </header>
+      <div class="slide-body">
+        <div class="grid-2">
+          <div class="flex-col">
+            <div class="card" style="border-left-color: #ef4444;">
+              <h3>Sự phân mảnh thông tin học đường</h3>
+              <p>Sinh viên phải theo dõi học tập qua nhiều kênh riêng biệt:</p>
+              <ul class="bullet-list" style="margin-top: 10px;">
+                <li>📅 <strong>Moodle:</strong> Theo dõi bài tập & deadline</li>
+                <li>📊 <strong>DAA Portal:</strong> Tra cứu thời khoá biểu & điểm thi</li>
+                <li>📧 <strong>Outlook Mail:</strong> Nhận thông báo chung</li>
+                <li>💬 <strong>Social groups:</strong> Thảo luận bài tập nhóm</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card card-accent">
+            <h3>Hệ quả thực tế</h3>
+            <ul class="bullet-list" style="margin-bottom: 0;">
+              <li>❌ Bỏ lỡ deadline quan trọng.</li>
+              <li>❌ Tốn thời gian đăng nhập nhiều nền tảng.</li>
+              <li>❌ Thiếu nơi thảo luận & cộng tác tài liệu môn học chuyên sâu.</li>
+            </ul>
+          </div>
+        </div>
+        <footer class="slide-footer">
+          <div class="footer-text">Lập trình trên thiết bị di động - Nhóm: UIT BUDDY</div>
+          <div class="slide-counter">Trang <span class="current-slide-num"></span> / <span class="total-slides-num"></span></div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- SLIDE 4: Giới thiệu đề tài — Giải pháp UIT Buddy -->
+    <div class="slide">
+      <header class="slide-header">
+        <div class="header-left">
+          <button class="menu-toggle">☰</button>
+          <img src="../images/uit-logo.png" alt="UIT Logo" class="uit-logo">
+          <div class="project-brand">
+            <span class="brand-title">UIT Buddy</span>
+            <span class="brand-tag">Giải pháp</span>
+          </div>
+        </div>
+        <h2 class="slide-title">Giới thiệu đề tài: Giải pháp UIT Buddy</h2>
+        <div class="progress-bar"></div>
+      </header>
+      <div class="slide-body">
+        <div class="grid-2">
+          <div class="flex-col">
+            <div class="card card-accent">
+              <h3>Tất cả trong một nền tảng (All-in-One)</h3>
+              <p>Một ứng dụng di động duy nhất giải quyết toàn bộ nhu cầu:</p>
+              <ul class="bullet-list" style="margin-top: 10px; display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
+                <li>📅 Xem lịch học & thi</li>
+                <li>📊 Theo dõi tiến độ GPA</li>
+                <li>💬 Trao đổi bài vở</li>
+                <li>📁 Lưu tài liệu S3</li>
+                <li>🤖 Chatbot hỗ trợ AI</li>
+              </ul>
+            </div>
+          </div>
+          <div class="phone-mockups">
+            <div class="phone-frame" style="width: 200px; height: 400px; border-width: 6px; border-radius: 20px;">
+              <img src="../images/giao diện app 1.png" alt="Screen 1">
+            </div>
+            <div class="phone-frame" style="width: 200px; height: 400px; border-width: 6px; border-radius: 20px;">
+              <img src="../images/giao diện app 2.png" alt="Screen 2">
+            </div>
+            <div class="phone-frame" style="width: 200px; height: 400px; border-width: 6px; border-radius: 20px;">
+              <img src="../images/giao diện app 3.png" alt="Screen 3">
+            </div>
+          </div>
+        </div>
+        <footer class="slide-footer">
+          <div class="footer-text">Lập trình trên thiết bị di động - Nhóm: UIT BUDDY</div>
+          <div class="slide-counter">Trang <span class="current-slide-num"></span> / <span class="total-slides-num"></span></div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- SLIDE 5: Tổng quan kiến trúc hệ thống -->
+    <div class="slide">
+      <header class="slide-header">
+        <div class="header-left">
+          <button class="menu-toggle">☰</button>
+          <img src="../images/uit-logo.png" alt="UIT Logo" class="uit-logo">
+          <div class="project-brand">
+            <span class="brand-title">UIT Buddy</span>
+            <span class="brand-tag">Hệ thống</span>
+          </div>
+        </div>
+        <h2 class="slide-title">Tổng quan kiến trúc hệ thống</h2>
+        <div class="progress-bar"></div>
+      </header>
+      <div class="slide-body">
+        <div class="grid-2">
+          <div class="flex-col">
+            <p class="text-highlight" style="font-size: 32px; font-weight: 700;">Hợp nhất 3 Repositories trên GitHub:</p>
+            <div class="card">
+              <h3 style="font-size: 28px;">🗂️ Phân chia vai trò</h3>
+              <p style="font-size: 24px;">• <strong>Backend:</strong> Spring Boot API server, Database migration.<br>
+              • <strong>Frontend:</strong> Flutter Client đa nền tảng (iOS, Android).<br>
+              • <strong>GitOps:</strong> Manifests & script deployment hạ tầng AWS.</p>
+            </div>
+          </div>
+          <div class="image-container" style="max-height: 480px;">
+            <img src="../images/github-repo.png" alt="Github Repo List" class="slide-image">
+          </div>
+        </div>
+        <footer class="slide-footer">
+          <div class="footer-text">Lập trình trên thiết bị di động - Nhóm: UIT BUDDY</div>
+          <div class="slide-counter">Trang <span class="current-slide-num"></span> / <span class="total-slides-num"></span></div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- SLIDE 6: Công nghệ sử dụng -->
+    <div class="slide">
+      <header class="slide-header">
+        <div class="header-left">
+          <button class="menu-toggle">☰</button>
+          <img src="../images/uit-logo.png" alt="UIT Logo" class="uit-logo">
+          <div class="project-brand">
+            <span class="brand-title">UIT Buddy</span>
+            <span class="brand-tag">Công nghệ</span>
+          </div>
+        </div>
+        <h2 class="slide-title">Công nghệ sử dụng</h2>
+        <div class="progress-bar"></div>
+      </header>
+      <div class="slide-body">
+        <div class="grid-3" style="grid-template-rows: 1fr 1fr; gap: 20px;">
+          <div class="card card-accent" style="padding: 20px;">
+            <h3 style="font-size: 28px;">📱 Mobile App</h3>
+            <p style="font-size: 22px;"><strong>Flutter 3.38.6</strong>, BLoC Pattern, GoRouter, SecureStorage</p>
+          </div>
+          <div class="card" style="padding: 20px;">
+            <h3 style="font-size: 28px;">☕ Backend Service</h3>
+            <p style="font-size: 22px;"><strong>Spring Boot 4.0</strong>, Spring Security (JWT), WebSocket</p>
+          </div>
+          <div class="card card-accent" style="padding: 20px;">
+            <h3 style="font-size: 28px;">🗄️ Databases</h3>
+            <p style="font-size: 22px;"><strong>PostgreSQL 17</strong> (RDS) + <strong>Redis 8</strong> cache</p>
+          </div>
+          <div class="card" style="padding: 20px;">
+            <h3 style="font-size: 28px;">☁️ Cloud Storage</h3>
+            <p style="font-size: 22px;"><strong>AWS S3</strong> bucket, CloudFront SigV4 CDN</p>
+          </div>
+          <div class="card card-accent" style="padding: 20px;">
+            <h3 style="font-size: 28px;">⚙️ DevOps & CI/CD</h3>
+            <p style="font-size: 22px;"><strong>Docker</strong>, <strong>Terraform</strong>, <strong>GitHub Actions</strong></p>
+          </div>
+          <div class="card" style="padding: 20px;">
+            <h3 style="font-size: 28px;">🤖 AI Chat</h3>
+            <p style="font-size: 22px;"><strong>FastAPI</strong>, Python, Neo4j Graph DB</p>
+          </div>
+        </div>
+        <footer class="slide-footer">
+          <div class="footer-text">Lập trình trên thiết bị di động - Nhóm: UIT BUDDY</div>
+          <div class="slide-counter">Trang <span class="current-slide-num"></span> / <span class="total-slides-num"></span></div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- SLIDE 7: Kiến trúc tổng quan (System Overview) -->
+    <div class="slide">
+      <header class="slide-header">
+        <div class="header-left">
+          <button class="menu-toggle">☰</button>
+          <img src="../images/uit-logo.png" alt="UIT Logo" class="uit-logo">
+          <div class="project-brand">
+            <span class="brand-title">UIT Buddy</span>
+            <span class="brand-tag">Kiến trúc</span>
+          </div>
+        </div>
+        <h2 class="slide-title">Kiến trúc tổng quan (System Overview)</h2>
+        <div class="progress-bar"></div>
+      </header>
+      <div class="slide-body">
+        <div class="grid-2">
+          <div class="flex-col">
+            <div class="card">
+              <h3>Dòng dữ liệu chính</h3>
+              <p style="font-size: 26px;">Client gửi API requests đến Gateway. Cổng Gateway định tuyến đến Spring Boot. Các nghiệp vụ nặng về AI / Tri thức môn học được định tuyến riêng sang Python FastAPI.</p>
+            </div>
+          </div>
+          <div class="image-container" style="max-height: 480px; border: none; box-shadow: var(--shadow-lg);">
+            <img src="../images/AWS Architecture Diagram.png" alt="AWS Architecture Diagram" class="slide-image">
+          </div>
+        </div>
+        <footer class="slide-footer">
+          <div class="footer-text">Lập trình trên thiết bị di động - Nhóm: UIT BUDDY</div>
+          <div class="slide-counter">Trang <span class="current-slide-num"></span> / <span class="total-slides-num"></span></div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- SLIDE 8: Backend: Kiến trúc Layered -->
+    <div class="slide">
+      <header class="slide-header">
+        <div class="header-left">
+          <button class="menu-toggle">☰</button>
+          <img src="../images/uit-logo.png" alt="UIT Logo" class="uit-logo">
+          <div class="project-brand">
+            <span class="brand-title">UIT Buddy</span>
+            <span class="brand-tag">Backend</span>
+          </div>
+        </div>
+        <h2 class="slide-title">Backend: Kiến trúc Layered</h2>
+        <div class="progress-bar"></div>
+      </header>
+      <div class="slide-body">
+        <div class="grid-2">
+          <div class="flex-col">
+            <div class="card">
+              <h3>Cấu trúc dự án Spring Boot</h3>
+              <p style="font-size: 26px;">Nhóm áp dụng mô hình phân lớp chuẩn (Layered Architecture): Cô lập logic nghiệp vụ Service khỏi các lớp kết nối HTTP Controller và truy vấn SQL Repository.</p>
+            </div>
+          </div>
+          <div class="diagram-container">
+            <div class="arch-diagram" style="gap:10px;">
+              <div class="arch-box" style="width: 90%;">Controller (API Gate/Endpoints)</div>
+              <div class="arch-arrow-down" style="font-size: 20px;">↓</div>
+              <div class="arch-box highlight" style="width: 90%;">Service (Nghiệp vụ ứng dụng)</div>
+              <div class="arch-arrow-down" style="font-size: 20px;">↓</div>
+              <div class="arch-box" style="width: 90%;">Repository (Spring Data JPA)</div>
+            </div>
+          </div>
+        </div>
+        <footer class="slide-footer">
+          <div class="footer-text">Lập trình trên thiết bị di động - Nhóm: UIT BUDDY</div>
+          <div class="slide-counter">Trang <span class="current-slide-num"></span> / <span class="total-slides-num"></span></div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- SLIDE 9: Backend Modules: Xác thực & Moodle -->
+    <div class="slide">
+      <header class="slide-header">
+        <div class="header-left">
+          <button class="menu-toggle">☰</button>
+          <img src="../images/uit-logo.png" alt="UIT Logo" class="uit-logo">
+          <div class="project-brand">
+            <span class="brand-title">UIT Buddy</span>
+            <span class="brand-tag">Backend Modules</span>
+          </div>
+        </div>
+        <h2 class="slide-title">Backend: Module Xác thực & Moodle</h2>
+        <div class="progress-bar"></div>
+      </header>
+      <div class="slide-body">
+        <div class="grid-2">
+          <div class="flex-col">
+            <div class="card">
+              <h3>Module: auth</h3>
+              <p style="font-size: 24px;">• Bảo mật JWT: Access Token (15 phút) & Refresh Token (7 ngày).<br>
+              • Tích hợp Mail Sender gửi OTP reset mật khẩu.<br>
+              • Xác thực Token Moodle để liên kết tài khoản.</p>
+            </div>
+          </div>
+          <div class="card card-accent">
+            <h3>Module: academic</h3>
+            <p style="font-size: 24px;">• Lên lịch Cron Job tự động đồng bộ lịch học từ Moodle.<br>
+            • Đồng bộ điểm số qua Moodle API.<br>
+            • Sử dụng <strong>Resilience4j Circuit Breaker</strong> để ngắt kết nối an toàn khi Moodle quá tải.</p>
+          </div>
+        </div>
+        <footer class="slide-footer">
+          <div class="footer-text">Lập trình trên thiết bị di động - Nhóm: UIT BUDDY</div>
+          <div class="slide-counter">Trang <span class="current-slide-num"></span> / <span class="total-slides-num"></span></div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- SLIDE 10: Backend Modules: Mạng xã hội & File -->
+    <div class="slide">
+      <header class="slide-header">
+        <div class="header-left">
+          <button class="menu-toggle">☰</button>
+          <img src="../images/uit-logo.png" alt="UIT Logo" class="uit-logo">
+          <div class="project-brand">
+            <span class="brand-title">UIT Buddy</span>
+            <span class="brand-tag">Backend Modules</span>
+          </div>
+        </div>
+        <h2 class="slide-title">Backend: Module Mạng xã hội & File</h2>
+        <div class="progress-bar"></div>
+      </header>
+      <div class="slide-body">
+        <div class="grid-2">
+          <div class="flex-col">
+            <div class="card">
+              <h3>Module: social</h3>
+              <p style="font-size: 24px;">• Thiết lập cấu trúc cơ sở dữ liệu quan hệ cho Post, Comment, Reaction.<br>
+              • Xử lý truy vấn kết bạn (Friend request) và mối quan hệ bạn bè.<br>
+              • Phân trang danh sách News Feed để tăng tốc độ phản hồi.</p>
+            </div>
+          </div>
+          <div class="card card-accent">
+            <h3>Module: document</h3>
+            <p style="font-size: 24px;">• Tạo AWS Presigned URL SigV4 cho phép client upload ảnh/video trực tiếp lên S3.<br>
+            • Spring WebSocket quản lý các room cộng tác tài liệu.<br>
+            • Kiểm tra phân quyền truy cập (Access Control) trước khi tải file.</p>
+          </div>
+        </div>
+        <footer class="slide-footer">
+          <div class="footer-text">Lập trình trên thiết bị di động - Nhóm: UIT BUDDY</div>
+          <div class="slide-counter">Trang <span class="current-slide-num"></span> / <span class="total-slides-num"></span></div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- SLIDE 11: Backend: Database & Caching -->
+    <div class="slide">
+      <header class="slide-header">
+        <div class="header-left">
+          <button class="menu-toggle">☰</button>
+          <img src="../images/uit-logo.png" alt="UIT Logo" class="uit-logo">
+          <div class="project-brand">
+            <span class="brand-title">UIT Buddy</span>
+            <span class="brand-tag">Data Layer</span>
+          </div>
+        </div>
+        <h2 class="slide-title">Backend: Database & Caching</h2>
+        <div class="progress-bar"></div>
+      </header>
+      <div class="slide-body">
+        <div class="grid-2">
+          <div class="flex-col">
+            <div class="card" style="padding: 20px;">
+              <h3>PostgreSQL 17 (AWS RDS)</h3>
+              <p style="font-size: 22px;">• Cơ sở dữ liệu quan hệ chính (25+ bảng).<br>
+              • Schema lịch sử thông qua Flyway Migrations.<br>
+              • Cô lập trong Private Subnet bảo mật.</p>
+            </div>
+            <div class="card card-accent" style="padding: 20px;">
+              <h3>Redis 8 In-memory Store</h3>
+              <p style="font-size: 22px;">• Cache lịch học gần nhất (TTL: 1h).<br>
+              • Lưu OTP Email phục vụ đăng ký (TTL: 5m).<br>
+              • Quản lý danh sách Refresh Token thu hồi.</p>
+            </div>
+          </div>
+          <div class="image-container" style="max-height: 480px; background-color: transparent; border: none; box-shadow: none;">
+            <img src="../images/RDS.png" alt="AWS RDS Database" class="slide-image" style="object-fit: contain;">
+          </div>
+        </div>
+        <footer class="slide-footer">
+          <div class="footer-text">Lập trình trên thiết bị di động - Nhóm: UIT BUDDY</div>
+          <div class="slide-counter">Trang <span class="current-slide-num"></span> / <span class="total-slides-num"></span></div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- SLIDE 12: Kiến trúc Frontend — Clean Architecture -->
+    <div class="slide">
+      <header class="slide-header">
+        <div class="header-left">
+          <button class="menu-toggle">☰</button>
+          <img src="../images/uit-logo.png" alt="UIT Logo" class="uit-logo">
+          <div class="project-brand">
+            <span class="brand-title">UIT Buddy</span>
+            <span class="brand-tag">Flutter Arch</span>
+          </div>
+        </div>
+        <h2 class="slide-title">Kiến trúc Frontend — Clean Architecture</h2>
+        <div class="progress-bar"></div>
+      </header>
+      <div class="slide-body">
+        <div class="grid-2">
+          <div class="flex-col">
+            <div class="card">
+              <h3>Quy tắc phụ thuộc hướng tâm</h3>
+              <p style="font-size: 24px;">Mã nguồn Flutter được tổ chức theo 3 tầng:</p>
+              <ul class="bullet-list" style="margin-top: 10px;">
+                <li><strong>Presentation:</strong> Chứa Widgets (UI) & BLoC (State).</li>
+                <li><strong>Domain:</strong> Nghiệp vụ cốt lộ (Entities, UseCases, Interfaces).</li>
+                <li><strong>Data:</strong> Models, Repositories, Remote Sources (Dio HTTP).</li>
+              </ul>
+            </div>
+          </div>
+          <div class="diagram-container">
+            <div class="arch-diagram" style="position: relative; width: 350px; height: 350px; border-radius: 50%; border: 2px solid var(--border-color); display: flex; align-items: center; justify-content: center; background: white;">
+              <div style="width: 270px; height: 270px; border-radius: 50%; border: 2px solid var(--primary-blue); display: flex; align-items: center; justify-content: center; background: var(--light-blue); position: absolute;">
+                <div style="width: 150px; height: 150px; border-radius: 50%; border: 2px solid var(--accent-blue); display: flex; align-items: center; justify-content: center; background: white; position: absolute;">
+                  <span style="font-weight: 800; color: var(--primary-blue); font-size: 18px;">DOMAIN</span>
+                </div>
+                <span style="font-weight: 800; color: var(--accent-blue); font-size: 18px; position: absolute; top: 22px;">DATA</span>
+              </div>
+              <span style="font-weight: 800; color: var(--text-dark); font-size: 18px; position: absolute; top: 12px;">PRESENTATION</span>
+            </div>
+          </div>
+        </div>
+        <footer class="slide-footer">
+          <div class="footer-text">Lập trình trên thiết bị di động - Nhóm: UIT BUDDY</div>
+          <div class="slide-counter">Trang <span class="current-slide-num"></span> / <span class="total-slides-num"></span></div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- SLIDE 13: Cấu trúc thư mục Flutter -->
+    <div class="slide">
+      <header class="slide-header">
+        <div class="header-left">
+          <button class="menu-toggle">☰</button>
+          <img src="../images/uit-logo.png" alt="UIT Logo" class="uit-logo">
+          <div class="project-brand">
+            <span class="brand-title">UIT Buddy</span>
+            <span class="brand-tag">Folder Structure</span>
+          </div>
+        </div>
+        <h2 class="slide-title">Cấu trúc thư mục Flutter</h2>
+        <div class="progress-bar"></div>
+      </header>
+      <div class="slide-body">
+        <div class="grid-2">
+          <div class="flex-col">
+            <pre style="margin-top:0px; padding:15px; font-size:15px; max-height:480px; overflow-y:auto;"><code class="highlight-yaml">lib/
+├── app/
+│   ├── di/          → GetIt dependency injection
+│   ├── router/      → GoRouter route definitions
+│   └── app.dart     → Root MaterialApp.router
+├── core/
+│   ├── network/     → Dio HTTP client, Interceptors
+│   ├── theme/       → AppColor, AppTextStyle
+│   └── usecase/     → UseCase Base Class
+└── features/
+    ├── onboarding/  → Đăng ký & xác thực Moodle
+    ├── calendar/    → Thời khoá biểu dạng lưới
+    ├── social/      → Mạng xã hội & AI Chatbot
+    ├── chat/        → CometChat chat & call
+    └── storage/     → S3 Document Manager</code></pre>
+          </div>
+          <div class="flex-col">
+            <div class="card card-accent">
+              <h3>Thiết kế Feature-Driven</h3>
+              <p style="font-size: 24px;">• Code chia theo tính năng (Feature-driven) thay vì phân loại tầng (Layer-driven).<br>
+              • Giúp tăng tính độc lập giữa các module.<br>
+              • Tránh xung đột code khi làm việc nhóm lớn.</p>
+            </div>
+          </div>
+        </div>
+        <footer class="slide-footer">
+          <div class="footer-text">Lập trình trên thiết bị di động - Nhóm: UIT BUDDY</div>
+          <div class="slide-counter">Trang <span class="current-slide-num"></span> / <span class="total-slides-num"></span></div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- SLIDE 14: State Management — BLoC Pattern -->
+    <div class="slide">
+      <header class="slide-header">
+        <div class="header-left">
+          <button class="menu-toggle">☰</button>
+          <img src="../images/uit-logo.png" alt="UIT Logo" class="uit-logo">
+          <div class="project-brand">
+            <span class="brand-title">UIT Buddy</span>
+            <span class="brand-tag">State Management</span>
+          </div>
+        </div>
+        <h2 class="slide-title">State Management — BLoC Pattern</h2>
+        <div class="progress-bar"></div>
+      </header>
+      <div class="slide-body">
+        <div class="grid-2">
+          <div class="flex-col">
+            <div class="card">
+              <h3>Tại sao chọn flutter_bloc 9.1.1?</h3>
+              <p style="font-size: 24px;">• Luồng dữ liệu một chiều rõ ràng (Uni-directional data flow).<br>
+              • Dễ dàng viết Unit Test cho logic của BLoC mà không cần dựng UI.<br>
+              • Tái sử dụng trạng thái dễ dàng bằng BlocProvider.</p>
+            </div>
+          </div>
+          <div class="diagram-container">
+            <div class="flex-col" style="align-items: center; width: 100%;">
+              <div class="flow-node" style="font-size: 20px; padding: 10px 20px;">📱 Flutter UI Widget</div>
+              <div class="flow-arrow" style="font-size: 24px; margin: 4px 0;">▼ Event</div>
+              <div class="flow-node" style="background-color: var(--light-blue); font-size: 20px; padding: 10px 20px;">⚡ BLoC Controller</div>
+              <div class="flow-arrow" style="font-size: 24px; margin: 4px 0;">▼ State</div>
+              <div class="flow-node" style="background-color: var(--primary-blue); color: white; font-size: 20px; padding: 10px 20px;">🔄 UI Re-render</div>
+            </div>
+          </div>
+        </div>
+        <footer class="slide-footer">
+          <div class="footer-text">Lập trình trên thiết bị di động - Nhóm: UIT BUDDY</div>
+          <div class="slide-counter">Trang <span class="current-slide-num"></span> / <span class="total-slides-num"></span></div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- SLIDE 15: Dependency Injection & Routing -->
+    <div class="slide">
+      <header class="slide-header">
+        <div class="header-left">
+          <button class="menu-toggle">☰</button>
+          <img src="../images/uit-logo.png" alt="UIT Logo" class="uit-logo">
+          <div class="project-brand">
+            <span class="brand-title">UIT Buddy</span>
+            <span class="brand-tag">DI & Routing</span>
+          </div>
+        </div>
+        <h2 class="slide-title">Dependency Injection & Routing</h2>
+        <div class="progress-bar"></div>
+      </header>
+      <div class="slide-body">
+        <div class="grid-2">
+          <div class="flex-col">
+            <div class="card">
+              <h3>GetIt 9.2.0 — Service Locator</h3>
+              <p style="font-size: 24px;">• Giải quyết triệt để vấn đề truyền phụ thuộc lòng vòng (Prop drilling).<br>
+              • Khởi tạo singleton các lớp dùng chung (Dio, Router, Storage).<br>
+              • Khởi tạo factory BLoCs mới mỗi khi điều hướng.</p>
+            </div>
+          </div>
+          <div class="card card-accent">
+            <h3>GoRouter 17.0.1</h3>
+            <p style="font-size: 24px;">• Hỗ trợ quản lý cây routes đồng bộ.<br>
+            • <strong>Redirect Guard:</strong> Tự động kiểm tra Token trong secure storage, chuyển hướng về Welcome/Login nếu chưa đăng nhập.</p>
+          </div>
+        </div>
+        <footer class="slide-footer">
+          <div class="footer-text">Lập trình trên thiết bị di động - Nhóm: UIT BUDDY</div>
+          <div class="slide-counter">Trang <span class="current-slide-num"></span> / <span class="total-slides-num"></span></div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- SLIDE 16: Network Layer — Dio & Error Handling -->
+    <div class="slide">
+      <header class="slide-header">
+        <div class="header-left">
+          <button class="menu-toggle">☰</button>
+          <img src="../images/uit-logo.png" alt="UIT Logo" class="uit-logo">
+          <div class="project-brand">
+            <span class="brand-title">UIT Buddy</span>
+            <span class="brand-tag">Network</span>
+          </div>
+        </div>
+        <h2 class="slide-title">Network Layer & Error Handling</h2>
+        <div class="progress-bar"></div>
+      </header>
+      <div class="slide-body">
+        <div class="grid-2">
+          <div class="flex-col">
+            <div class="card">
+              <h3>Dio HTTP Client & Interceptors</h3>
+              <p style="font-size: 24px;">• Tự động gắn header `Authorization: Bearer token`.<br>
+              • <strong>AuthInterceptor:</strong> Bắt lỗi 401, tự gửi API Refresh Token ngầm để lấy Access Token mới và retry request lỗi trước đó.</p>
+            </div>
+          </div>
+          <div class="card card-accent">
+            <h3>Xử lý lỗi với fpdart</h3>
+            <p style="font-size: 24px;">• Loại bỏ hoàn toàn ngoại lệ (Exceptions) không mong muốn bằng cách trả về đối tượng <code>Either&lt;Failure, Success&gt;</code>.</p>
+            <pre style="margin: 5px 0 0 0; padding: 10px; font-size:18px;"><code class="highlight-dart">Future&lt;Either&lt;Failure, User&gt;&gt; login(...)</code></pre>
+          </div>
+        </div>
+        <footer class="slide-footer">
+          <div class="footer-text">Lập trình trên thiết bị di động - Nhóm: UIT BUDDY</div>
+          <div class="slide-counter">Trang <span class="current-slide-num"></span> / <span class="total-slides-num"></span></div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- SLIDE 17: Freezed & Code Generation -->
+    <div class="slide">
+      <header class="slide-header">
+        <div class="header-left">
+          <button class="menu-toggle">☰</button>
+          <img src="../images/uit-logo.png" alt="UIT Logo" class="uit-logo">
+          <div class="project-brand">
+            <span class="brand-title">UIT Buddy</span>
+            <span class="brand-tag">Code Gen</span>
+          </div>
+        </div>
+        <h2 class="slide-title">Freezed & Code Generation</h2>
+        <div class="progress-bar"></div>
+      </header>
+      <div class="slide-body">
+        <div class="grid-2">
+          <div class="flex-col">
+            <div class="card">
+              <h3>Freezed 3.1.0</h3>
+              <p style="font-size: 24px;">• Đảm bảo tính bất biến (Immutability) của dữ liệu.<br>
+              • Tự sinh code so sánh bằng `==` và băm `hashCode` cho các Models.<br>
+              • Sinh hàm Json Serialization (<code>fromJson</code>/<code>toJson</code>) mượt mà.</p>
+            </div>
+          </div>
+          <div class="flex-col">
+            <pre style="margin-top:0px; padding:15px; font-size:15px; max-height:380px; overflow-y:auto;"><code class="highlight-dart">@freezed
+class Post with _$Post {
+  const factory Post({
+    required String id,
+    required String content,
+    required User author,
+  }) = _Post;
+
+  factory Post.fromJson(Map&lt;String, dynamic&gt; json) => 
+      _$PostFromJson(json);
+}</code></pre>
+          </div>
+        </div>
+        <footer class="slide-footer">
+          <div class="footer-text">Lập trình trên thiết bị di động - Nhóm: UIT BUDDY</div>
+          <div class="slide-counter">Trang <span class="current-slide-num"></span> / <span class="total-slides-num"></span></div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- SLIDE 18: Tính năng: Onboarding & Đăng ký -->
+    <div class="slide">
+      <header class="slide-header">
+        <div class="header-left">
+          <button class="menu-toggle">☰</button>
+          <img src="../images/uit-logo.png" alt="UIT Logo" class="uit-logo">
+          <div class="project-brand">
+            <span class="brand-title">UIT Buddy</span>
+            <span class="brand-tag">Tính năng</span>
+          </div>
+        </div>
+        <h2 class="slide-title">Tính năng: Onboarding & Đăng ký</h2>
+        <div class="progress-bar"></div>
+      </header>
+      <div class="slide-body">
+        <div class="grid-2">
+          <div class="flex-col">
+            <div class="card">
+              <h3>Đăng ký thông qua Token Moodle</h3>
+              <p style="font-size: 24px;">• Sinh viên nhập Moodle Token cá nhân.<br>
+              • Server gọi API Moodle trường xác minh danh tính và lấy MSSV, họ tên thật.<br>
+              • Ngăn chặn hoàn toàn tình trạng tạo tài khoản ảo không thuộc trường UIT.</p>
+            </div>
+          </div>
+          <div class="phone-mockups">
+            <div class="phone-frame" style="width: 250px; height: 500px; border-width: 10px; border-radius: 28px;">
+              <img src="../images/giao diện app 1.png" alt="Login Screenshot">
+            </div>
+          </div>
+        </div>
+        <footer class="slide-footer">
+          <div class="footer-text">Lập trình trên thiết bị di động - Nhóm: UIT BUDDY</div>
+          <div class="slide-counter">Trang <span class="current-slide-num"></span> / <span class="total-slides-num"></span></div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- SLIDE 19: Tính năng: Session & Email OTP -->
+    <div class="slide">
+      <header class="slide-header">
+        <div class="header-left">
+          <button class="menu-toggle">☰</button>
+          <img src="../images/uit-logo.png" alt="UIT Logo" class="uit-logo">
+          <div class="project-brand">
+            <span class="brand-title">UIT Buddy</span>
+            <span class="brand-tag">Tính năng</span>
+          </div>
+        </div>
+        <h2 class="slide-title">Tính năng: Session & Email OTP</h2>
+        <div class="progress-bar"></div>
+      </header>
+      <div class="slide-body">
+        <div class="grid-2">
+          <div class="flex-col">
+            <div class="card">
+              <h3>Lưu trữ khóa bảo mật</h3>
+              <p style="font-size: 24px;">• JWT Token lưu trong `FlutterSecureStorage` để chống rò rỉ.<br>
+              • Quản lý phiên đăng nhập toàn app thông qua `SessionBloc` ở root.</p>
+            </div>
+            <div class="card card-accent">
+              <h3>Reset mật khẩu qua OTP Mail</h3>
+              <p style="font-size: 24px;">• Người dùng yêu cầu reset mật khẩu.<br>
+              • Server sinh OTP lưu vào Redis (hạn dùng 5 phút) và gửi về Email trường.<br>
+              • Client điền đúng mã OTP nhận từ email để đặt lại mật khẩu mới.</p>
+            </div>
+          </div>
+          <div class="flex-col" style="justify-content: center; align-items: center;">
+            <div class="arch-box highlight" style="width: 90%;">Secure Token Storage (Keychain / Keystore)</div>
+            <div class="arch-arrow-down">↕</div>
+            <div class="arch-box" style="width: 90%;">OTP Validation with Redis (TTL: 5m)</div>
+          </div>
+        </div>
+        <footer class="slide-footer">
+          <div class="footer-text">Lập trình trên thiết bị di động - Nhóm: UIT BUDDY</div>
+          <div class="slide-counter">Trang <span class="current-slide-num"></span> / <span class="total-slides-num"></span></div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- SLIDE 20: Tính năng: Home Dashboard -->
+    <div class="slide">
+      <header class="slide-header">
+        <div class="header-left">
+          <button class="menu-toggle">☰</button>
+          <img src="../images/uit-logo.png" alt="UIT Logo" class="uit-logo">
+          <div class="project-brand">
+            <span class="brand-title">UIT Buddy</span>
+            <span class="brand-tag">Tính năng</span>
+          </div>
+        </div>
+        <h2 class="slide-title">Tính năng: Home Dashboard</h2>
+        <div class="progress-bar"></div>
+      </header>
+      <div class="slide-body">
+        <div class="grid-2">
+          <div class="flex-col">
+            <div class="card">
+              <h3>Bảng điều khiển cá nhân</h3>
+              <p style="font-size: 24px;">• Hiển thị tên, avatar và thông tin lớp sinh hoạt của sinh viên.<br>
+              • Ô danh sách môn học sắp diễn ra kế tiếp giúp sinh viên chuẩn bị bài trước khi đến lớp.<br>
+              • Nút truy cập nhanh: DAA, Moodle, Web trường.</p>
+            </div>
+          </div>
+          <div class="phone-mockups">
+            <div class="phone-frame" style="width: 250px; height: 500px; border-width: 10px; border-radius: 28px;">
+              <img src="../images/giao diện app 2.png" alt="Dashboard Screenshot">
+            </div>
+          </div>
+        </div>
+        <footer class="slide-footer">
+          <div class="footer-text">Lập trình trên thiết bị di động - Nhóm: UIT BUDDY</div>
+          <div class="slide-counter">Trang <span class="current-slide-num"></span> / <span class="total-slides-num"></span></div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- SLIDE 21: Tính năng: Lịch học tuần -->
+    <div class="slide">
+      <header class="slide-header">
+        <div class="header-left">
+          <button class="menu-toggle">☰</button>
+          <img src="../images/uit-logo.png" alt="UIT Logo" class="uit-logo">
+          <div class="project-brand">
+            <span class="brand-title">UIT Buddy</span>
+            <span class="brand-tag">Tính năng</span>
+          </div>
+        </div>
+        <h2 class="slide-title">Tính năng: Lịch học tuần</h2>
+        <div class="progress-bar"></div>
+      </header>
+      <div class="slide-body">
+        <div class="grid-2">
+          <div class="flex-col">
+            <div class="card card-accent" style="padding: 20px;">
+              <h3>Thời khóa biểu dạng lưới</h3>
+              <p style="font-size: 22px;">• Thiết kế lưới lịch học trực quan theo tuần.<br>
+              • Tiết học, Phòng học, Tên giảng viên chi tiết.<br>
+              • Tích hợp deadline bài tập ngay dưới môn học.</p>
+            </div>
+            <div class="card" style="padding: 20px;">
+              <h3>Đồng bộ real-time</h3>
+              <p style="font-size: 22px;">• Kéo trực tiếp từ Moodle API.<br>
+              • Xem ngoại tuyến (offline) không cần mạng.</p>
+            </div>
+          </div>
+          <div class="phone-mockups">
+            <div class="phone-frame" style="width: 250px; height: 500px; border-width: 10px; border-radius: 28px;">
+              <img src="../images/giao diện app 2.png" alt="Weekly Calendar Screenshot">
+            </div>
+          </div>
+        </div>
+        <footer class="slide-footer">
+          <div class="footer-text">Lập trình trên thiết bị di động - Nhóm: UIT BUDDY</div>
+          <div class="slide-counter">Trang <span class="current-slide-num"></span> / <span class="total-slides-num"></span></div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- SLIDE 22: Tính năng: Ghi chú Markdown -->
+    <div class="slide">
+      <header class="slide-header">
+        <div class="header-left">
+          <button class="menu-toggle">☰</button>
+          <img src="../images/uit-logo.png" alt="UIT Logo" class="uit-logo">
+          <div class="project-brand">
+            <span class="brand-title">UIT Buddy</span>
+            <span class="brand-tag">Tính năng</span>
+          </div>
+        </div>
+        <h2 class="slide-title">Tính năng: Ghi chú Markdown</h2>
+        <div class="progress-bar"></div>
+      </header>
+      <div class="slide-body">
+        <div class="grid-2">
+          <div class="flex-col">
+            <div class="card">
+              <h3>Trình soạn thảo Markdown</h3>
+              <p style="font-size: 24px;">• Soạn thảo văn bản ghi chú bài học có định dạng.<br>
+              • Render xem trước (Preview) theo cú pháp Markdown thời gian thực ở phần dưới màn hình.<br>
+              • Hỗ trợ tạo đề mục lớn nhỏ, chữ in nghiêng, in đậm, danh sách và codeblock.</p>
+            </div>
+          </div>
+          <div class="phone-mockups">
+            <div class="phone-frame" style="width: 250px; height: 500px; border-width: 10px; border-radius: 28px;">
+              <img src="../images/giao diện app 1.png" alt="Markdown Note Screenshot">
+            </div>
+          </div>
+        </div>
+        <footer class="slide-footer">
+          <div class="footer-text">Lập trình trên thiết bị di động - Nhóm: UIT BUDDY</div>
+          <div class="slide-counter">Trang <span class="current-slide-num"></span> / <span class="total-slides-num"></span></div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- SLIDE 23: Tính năng: S3 Document Export -->
+    <div class="slide">
+      <header class="slide-header">
+        <div class="header-left">
+          <button class="menu-toggle">☰</button>
+          <img src="../images/uit-logo.png" alt="UIT Logo" class="uit-logo">
+          <div class="project-brand">
+            <span class="brand-title">UIT Buddy</span>
+            <span class="brand-tag">Tính năng</span>
+          </div>
+        </div>
+        <h2 class="slide-title">Tính năng: S3 Document Export</h2>
+        <div class="progress-bar"></div>
+      </header>
+      <div class="slide-body">
+        <div class="grid-2">
+          <div class="flex-col">
+            <div class="card card-accent" style="padding: 20px;">
+              <h3>Tính năng Save to Doc</h3>
+              <p style="font-size: 22px;">• Xuất trực tiếp ghi chú Markdown thành file.<br>
+              • Sơ đồ thư mục chọn folder lưu trữ.<br>
+              • Đẩy trực tiếp tài liệu lên S3 bucket.</p>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 8px; margin-top: 10px; padding-left: 20px;">
+              <div class="arch-box highlight" style="font-size: 18px; padding: 8px 15px; text-align: center;">Markdown Content</div>
+              <div class="arch-box" style="font-size: 18px; padding: 8px 15px; text-align: center;">Directory Picker</div>
+              <div class="arch-box accent" style="font-size: 18px; padding: 8px 15px; text-align: center;">AWS S3 Bucket</div>
+            </div>
+          </div>
+          <div class="phone-mockups">
+            <div class="phone-frame" style="width: 250px; height: 500px; border-width: 10px; border-radius: 28px;">
+              <img src="../images/giao diện app 3.png" alt="S3 Export Screenshot">
+            </div>
+          </div>
+        </div>
+        <footer class="slide-footer">
+          <div class="footer-text">Lập trình trên thiết bị di động - Nhóm: UIT BUDDY</div>
+          <div class="slide-counter">Trang <span class="current-slide-num"></span> / <span class="total-slides-num"></span></div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- SLIDE 24: Tính năng: Thời tiết học đường -->
+    <div class="slide">
+      <header class="slide-header">
+        <div class="header-left">
+          <button class="menu-toggle">☰</button>
+          <img src="../images/uit-logo.png" alt="UIT Logo" class="uit-logo">
+          <div class="project-brand">
+            <span class="brand-title">UIT Buddy</span>
+            <span class="brand-tag">Tính năng</span>
+          </div>
+        </div>
+        <h2 class="slide-title">Tính năng: Thời tiết học đường</h2>
+        <div class="progress-bar"></div>
+      </header>
+      <div class="slide-body">
+        <div class="grid-2">
+          <div class="flex-col">
+            <div class="card">
+              <h3>Thời tiết Thủ Đức</h3>
+              <p style="font-size: 24px;">• Lấy tọa độ GPS thiết bị qua Geolocator khi mở ứng dụng.<br>
+              • Gọi OpenWeatherMap API tra cứu thời tiết xung quanh khu vực UIT.<br>
+              • Chỉ số chi tiết: độ ẩm, xác suất mưa để sinh viên chủ động mang ô khi đi học.</p>
+            </div>
+            <div class="card card-accent">
+              <h3>Dự báo chi tiết</h3>
+              <p style="font-size: 24px;">• Biểu đồ dự báo thời tiết chi tiết theo giờ (24h tới).<br>
+              • Dự báo tổng quan theo ngày trong tuần (7 ngày tới).</p>
+            </div>
+          </div>
+          <div class="phone-mockups">
+            <div class="phone-frame" style="width: 250px; height: 500px; border-width: 10px; border-radius: 28px;">
+              <img src="../images/giao diện app 2.png" alt="Weather Screen Screenshot">
+            </div>
+          </div>
+        </div>
+        <footer class="slide-footer">
+          <div class="footer-text">Lập trình trên thiết bị di động - Nhóm: UIT BUDDY</div>
+          <div class="slide-counter">Trang <span class="current-slide-num"></span> / <span class="total-slides-num"></span></div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- SLIDE 25: Tính năng: Theo dõi Deadlines -->
+    <div class="slide">
+      <header class="slide-header">
+        <div class="header-left">
+          <button class="menu-toggle">☰</button>
+          <img src="../images/uit-logo.png" alt="UIT Logo" class="uit-logo">
+          <div class="project-brand">
+            <span class="brand-title">UIT Buddy</span>
+            <span class="brand-tag">Tính năng</span>
+          </div>
+        </div>
+        <h2 class="slide-title">Tính năng: Theo dõi Deadlines</h2>
+        <div class="progress-bar"></div>
+      </header>
+      <div class="slide-body">
+        <div class="grid-2">
+          <div class="flex-col">
+            <div class="card">
+              <h3>Danh sách deadline Moodle tập trung</h3>
+              <p style="font-size: 24px;">• Gom nhóm toàn bộ deadline từ Moodle phân chia theo từng lớp môn học.<br>
+              • Màu sắc cảnh báo trực quan:<br>
+              - 🔴 <strong>Overdue:</strong> Đã quá hạn.<br>
+              - 🟡 <strong>Near Deadline:</strong> Sắp đến hạn nộp.<br>
+              - 🟢 <strong>Done:</strong> Bài tập đã nộp.</p>
+            </div>
+          </div>
+          <div class="phone-mockups">
+            <div class="phone-frame" style="width: 250px; height: 500px; border-width: 10px; border-radius: 28px;">
+              <img src="../images/giao diện app 1.png" alt="Moodle Deadlines Screenshot">
+            </div>
+          </div>
+        </div>
+        <footer class="slide-footer">
+          <div class="footer-text">Lập trình trên thiết bị di động - Nhóm: UIT BUDDY</div>
+          <div class="slide-counter">Trang <span class="current-slide-num"></span> / <span class="total-slides-num"></span></div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- SLIDE 26: Tính năng: Chi tiết Deadline -->
+    <div class="slide">
+      <header class="slide-header">
+        <div class="header-left">
+          <button class="menu-toggle">☰</button>
+          <img src="../images/uit-logo.png" alt="UIT Logo" class="uit-logo">
+          <div class="project-brand">
+            <span class="brand-title">UIT Buddy</span>
+            <span class="brand-tag">Tính năng</span>
+          </div>
+        </div>
+        <h2 class="slide-title">Tính năng: Chi tiết Deadline</h2>
+        <div class="progress-bar"></div>
+      </header>
+      <div class="slide-body">
+        <div class="grid-2">
+          <div class="flex-col">
+            <div class="card card-accent" style="padding: 20px;">
+              <h3>Chi tiết yêu cầu bài tập</h3>
+              <p style="font-size: 22px;">• Hiển thị đầy đủ yêu cầu bài tập.<br>
+              • Tải xuống file đính kèm hướng dẫn.<br>
+              • Bộ đếm ngược hạn chót theo thời gian thực.</p>
+            </div>
+            <div class="card" style="padding: 20px;">
+              <h3>Submission Status</h3>
+              <p style="font-size: 22px;">• Trạng thái bài nộp hiện tại trên Moodle.<br>
+              • Điểm số và lời phê trực quan từ giảng viên.</p>
+            </div>
+          </div>
+          <div class="phone-mockups">
+            <div class="phone-frame" style="width: 250px; height: 500px; border-width: 10px; border-radius: 28px;">
+              <img src="../images/giao diện app 2.png" alt="Deadline Details Screenshot">
+            </div>
+          </div>
+        </div>
+        <footer class="slide-footer">
+          <div class="footer-text">Lập trình trên thiết bị di động - Nhóm: UIT BUDDY</div>
+          <div class="slide-counter">Trang <span class="current-slide-num"></span> / <span class="total-slides-num"></span></div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- SLIDE 27: Tính năng: Mạng xã hội News Feed -->
+    <div class="slide">
+      <header class="slide-header">
+        <div class="header-left">
+          <button class="menu-toggle">☰</button>
+          <img src="../images/uit-logo.png" alt="UIT Logo" class="uit-logo">
+          <div class="project-brand">
+            <span class="brand-title">UIT Buddy</span>
+            <span class="brand-tag">Tính năng</span>
+          </div>
+        </div>
+        <h2 class="slide-title">Tính năng: Mạng xã hội News Feed</h2>
+        <div class="progress-bar"></div>
+      </header>
+      <div class="slide-body">
+        <div class="grid-2">
+          <div class="flex-col">
+            <div class="card">
+              <h3>Bản tin sinh viên UIT</h3>
+              <p style="font-size: 24px;">• Đăng bài thảo luận học tập, câu lạc bộ.<br>
+              • Hỗ trợ đăng kèm hình ảnh, video (lưu trữ S3).<br>
+              • Hệ thống reaction đa dạng (Like, Love, Haha, Wow...).<br>
+              • Bình luận phân tầng (nested comment) mượt mà.</p>
+            </div>
+          </div>
+          <div class="phone-mockups">
+            <div class="phone-frame" style="width: 250px; height: 500px; border-width: 10px; border-radius: 28px;">
+              <img src="../images/giao diện app 3.png" alt="Social News Feed Screenshot">
+            </div>
+          </div>
+        </div>
+        <footer class="slide-footer">
+          <div class="footer-text">Lập trình trên thiết bị di động - Nhóm: UIT BUDDY</div>
+          <div class="slide-counter">Trang <span class="current-slide-num"></span> / <span class="total-slides-num"></span></div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- SLIDE 28: Tính năng: Hệ thống bạn bè & Tìm kiếm -->
+    <div class="slide">
+      <header class="slide-header">
+        <div class="header-left">
+          <button class="menu-toggle">☰</button>
+          <img src="../images/uit-logo.png" alt="UIT Logo" class="uit-logo">
+          <div class="project-brand">
+            <span class="brand-title">UIT Buddy</span>
+            <span class="brand-tag">Tính năng</span>
+          </div>
+        </div>
+        <h2 class="slide-title">Tính năng: Hệ thống bạn bè & Tìm kiếm</h2>
+        <div class="progress-bar"></div>
+      </header>
+      <div class="slide-body">
+        <div class="grid-2">
+          <div class="flex-col">
+            <div class="card card-accent">
+              <h3>Friendship Management</h3>
+              <p style="font-size: 24px;">• Quản lý danh sách bạn bè học cùng trường.<br>
+              • Tab hiển thị lời mời kết bạn đang chờ duyệt.<br>
+              • Gửi, đồng ý hoặc từ chối kết bạn tức thì.</p>
+            </div>
+            <div class="card">
+              <h3>Social Search Filter</h3>
+              <p style="font-size: 24px;">• Tìm kiếm sinh viên khác qua tên, mã số sinh viên.<br>
+              • Tìm kiếm bài viết thảo luận theo từ khóa cụ thể.</p>
+            </div>
+          </div>
+          <div class="phone-mockups">
+            <div class="phone-frame" style="width: 250px; height: 500px; border-width: 10px; border-radius: 28px;">
+              <img src="../images/giao diện app 3.png" alt="Friend List Screenshot">
+            </div>
+          </div>
+        </div>
+        <footer class="slide-footer">
+          <div class="footer-text">Lập trình trên thiết bị di động - Nhóm: UIT BUDDY</div>
+          <div class="slide-counter">Trang <span class="current-slide-num"></span> / <span class="total-slides-num"></span></div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- SLIDE 29: Tính năng: Trợ lý AI UIT Buddy -->
+    <div class="slide">
+      <header class="slide-header">
+        <div class="header-left">
+          <button class="menu-toggle">☰</button>
+          <img src="../images/uit-logo.png" alt="UIT Logo" class="uit-logo">
+          <div class="project-brand">
+            <span class="brand-title">UIT Buddy</span>
+            <span class="brand-tag">Tính năng</span>
+          </div>
+        </div>
+        <h2 class="slide-title">Tính năng: Trợ lý AI UIT Buddy</h2>
+        <div class="progress-bar"></div>
+      </header>
+      <div class="slide-body">
+        <div class="grid-2">
+          <div class="flex-col">
+            <div class="card">
+              <h3>Trợ lý tư vấn học tập ảo</h3>
+              <p style="font-size: 24px;">• Chatbot thông minh hỗ trợ 24/7 cho sinh viên.<br>
+              • Hỗ trợ hiển thị Markdown: in đậm, danh sách và render khối code sạch đẹp.<br>
+              • Gợi ý câu hỏi thường gặp: Lộ trình môn học, điều kiện đăng ký học phần.</p>
+            </div>
+          </div>
+          <div class="phone-mockups">
+            <div class="phone-frame" style="width: 250px; height: 500px; border-width: 10px; border-radius: 28px;">
+              <img src="../images/giao diện app 2.png" alt="AI Chat Screenshot">
+            </div>
+          </div>
+        </div>
+        <footer class="slide-footer">
+          <div class="footer-text">Lập trình trên thiết bị di động - Nhóm: UIT BUDDY</div>
+          <div class="slide-counter">Trang <span class="current-slide-num"></span> / <span class="total-slides-num"></span></div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- SLIDE 30: Tính năng: Kiến trúc RAG phía Backend -->
+    <div class="slide">
+      <header class="slide-header">
+        <div class="header-left">
+          <button class="menu-toggle">☰</button>
+          <img src="../images/uit-logo.png" alt="UIT Logo" class="uit-logo">
+          <div class="project-brand">
+            <span class="brand-title">UIT Buddy</span>
+            <span class="brand-tag">Kiến trúc AI</span>
+          </div>
+        </div>
+        <h2 class="slide-title">Tính năng: Kiến trúc RAG phía Backend</h2>
+        <div class="progress-bar"></div>
+      </header>
+      <div class="slide-body">
+        <div class="grid-2">
+          <div class="flex-col">
+            <div class="card card-accent">
+              <h3>FastAPI & Neo4j</h3>
+              <p style="font-size: 24px;">• Sử dụng Python FastAPI để xử lý các yêu cầu AI nhanh chóng.<br>
+              • Tri thức về môn học tiên quyết, sơ đồ cây đào tạo được cấu trúc dưới dạng Đồ thị (Graph) trong <strong>Neo4j Database</strong>.<br>
+              • RAG kết hợp LLM để sinh lộ trình học tập tối ưu cho từng sinh viên.</p>
+            </div>
+          </div>
+          <div class="diagram-container">
+            <div class="arch-diagram" style="gap:12px;">
+              <div class="arch-box highlight" style="width: 90%;">AI Gateway (/api/chat)</div>
+              <div class="arch-arrow-down" style="font-size: 16px;">↓</div>
+              <div class="arch-box" style="width: 90%;">Python FastAPI Service</div>
+              <div class="arch-arrow-down" style="font-size: 16px;">↓</div>
+              <div class="arch-box accent" style="width: 90%;">Neo4j Graph (Knowledge Base)</div>
+            </div>
+          </div>
+        </div>
+        <footer class="slide-footer">
+          <div class="footer-text">Lập trình trên thiết bị di động - Nhóm: UIT BUDDY</div>
+          <div class="slide-counter">Trang <span class="current-slide-num"></span> / <span class="total-slides-num"></span></div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- SLIDE 31: Tính năng: Chat 1-1 & Nhóm -->
+    <div class="slide">
+      <header class="slide-header">
+        <div class="header-left">
+          <button class="menu-toggle">☰</button>
+          <img src="../images/uit-logo.png" alt="UIT Logo" class="uit-logo">
+          <div class="project-brand">
+            <span class="brand-title">UIT Buddy</span>
+            <span class="brand-tag">Tính năng</span>
+          </div>
+        </div>
+        <h2 class="slide-title">Tính năng: Chat 1-1 & Nhóm</h2>
+        <div class="progress-bar"></div>
+      </header>
+      <div class="slide-body">
+        <div class="grid-2">
+          <div class="flex-col">
+            <div class="card" style="padding: 20px;">
+              <h3>Nhắn tin qua CometChat SDK</h3>
+              <p style="font-size: 22px;">• Nhắn tin 1-1 và chat nhóm theo lớp học.<br>
+              • Trạng thái typing, online/offline thời gian thực.<br>
+              • Tích hợp UI Kit mượt mà, đồng bộ danh bạ bạn bè.</p>
+            </div>
+            <div class="card card-accent" style="padding: 20px;">
+              <h3>CometChat REST Sync</h3>
+              <p style="font-size: 22px;">• Backend tự động đồng bộ user khi đăng ký.<br>
+              • Server cấp Chat Token bảo mật.</p>
+            </div>
+          </div>
+          <div class="phone-mockups">
+            <div class="phone-frame" style="width: 250px; height: 500px; border-width: 10px; border-radius: 28px;">
+              <img src="../images/giao diện app 3.png" alt="CometChat Messages Screenshot">
+            </div>
+          </div>
+        </div>
+        <footer class="slide-footer">
+          <div class="footer-text">Lập trình trên thiết bị di động - Nhóm: UIT BUDDY</div>
+          <div class="slide-counter">Trang <span class="current-slide-num"></span> / <span class="total-slides-num"></span></div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- SLIDE 32: Tính năng: Voice & Video Calls -->
+    <div class="slide">
+      <header class="slide-header">
+        <div class="header-left">
+          <button class="menu-toggle">☰</button>
+          <img src="../images/uit-logo.png" alt="UIT Logo" class="uit-logo">
+          <div class="project-brand">
+            <span class="brand-title">UIT Buddy</span>
+            <span class="brand-tag">Tính năng</span>
+          </div>
+        </div>
+        <h2 class="slide-title">Tính năng: Voice & Video Calls</h2>
+        <div class="progress-bar"></div>
+      </header>
+      <div class="slide-body">
+        <div class="grid-2">
+          <div class="flex-col">
+            <div class="card" style="padding: 20px;">
+              <h3>CometChat Calls UIKit</h3>
+              <p style="font-size: 22px;">• Hỗ trợ Voice call & Video call chất lượng HD.<br>
+              • Giao diện gọi trực quan, chuông rung báo cuộc gọi.<br>
+              • Tích hợp trực tiếp trong phòng chat.</p>
+            </div>
+            <div class="card card-accent" style="padding: 20px;">
+              <h3>WebRTC Connection</h3>
+              <p style="font-size: 22px;">• Kết nối ngang hàng P2P có độ trễ cực thấp.<br>
+              • Tối ưu băng thông linh hoạt theo mạng di động.</p>
+            </div>
+          </div>
+          <div class="phone-mockups">
+            <div class="phone-frame" style="width: 250px; height: 500px; border-width: 10px; border-radius: 28px;">
+              <img src="../images/giao diện app 3.png" alt="CometChat Calls Screenshot">
+            </div>
+          </div>
+        </div>
+        <footer class="slide-footer">
+          <div class="footer-text">Lập trình trên thiết bị di động - Nhóm: UIT BUDDY</div>
+          <div class="slide-counter">Trang <span class="current-slide-num"></span> / <span class="total-slides-num"></span></div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- SLIDE 33: Tính năng: Lưu trữ S3 & CloudFront CDN -->
+    <div class="slide">
+      <header class="slide-header">
+        <div class="header-left">
+          <button class="menu-toggle">☰</button>
+          <img src="../images/uit-logo.png" alt="UIT Logo" class="uit-logo">
+          <div class="project-brand">
+            <span class="brand-title">UIT Buddy</span>
+            <span class="brand-tag">Tài liệu</span>
+          </div>
+        </div>
+        <h2 class="slide-title">Tính năng: Lưu trữ S3 & CloudFront CDN</h2>
+        <div class="progress-bar"></div>
+      </header>
+      <div class="slide-body">
+        <div class="grid-2">
+          <div class="flex-col">
+            <div class="card" style="padding: 20px;">
+              <h3>Quản lý tệp tin học tập</h3>
+              <p style="font-size: 22px;">• Phân chia thư mục lưu trữ theo môn học.<br>
+              • Xem trước tài liệu PDF, hình ảnh trực tiếp.<br>
+              • Tải lên an toàn thông qua Backend.</p>
+            </div>
+            <div class="card card-accent" style="padding: 20px;">
+              <h3>Security CloudFront OAC</h3>
+              <p style="font-size: 22px;">• Tốc độ tải vượt trội nhờ CloudFront CDN.<br>
+              • Chặn truy cập trực tiếp S3 bằng OAC.<br>
+              • Tạo Presigned URL có thời hạn.</p>
+            </div>
+          </div>
+          <div class="image-container" style="max-height: 480px; background-color: transparent; border: none; box-shadow: none;">
+            <img src="../images/S3.png" alt="AWS S3 Storage" class="slide-image" style="object-fit: contain;">
+          </div>
+        </div>
+        <footer class="slide-footer">
+          <div class="footer-text">Lập trình trên thiết bị di động - Nhóm: UIT BUDDY</div>
+          <div class="slide-counter">Trang <span class="current-slide-num"></span> / <span class="total-slides-num"></span></div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- SLIDE 34: Tính năng: Phân quyền Storage -->
+    <div class="slide">
+      <header class="slide-header">
+        <div class="header-left">
+          <button class="menu-toggle">☰</button>
+          <img src="../images/uit-logo.png" alt="UIT Logo" class="uit-logo">
+          <div class="project-brand">
+            <span class="brand-title">UIT Buddy</span>
+            <span class="brand-tag">Tài liệu</span>
+          </div>
+        </div>
+        <h2 class="slide-title">Tính năng: Phân quyền Storage</h2>
+        <div class="progress-bar"></div>
+      </header>
+      <div class="slide-body">
+        <div class="grid-2">
+          <div class="flex-col">
+            <div class="card card-accent">
+              <h3>Access Control Management</h3>
+              <p style="font-size: 24px;">• Quản lý quyền truy cập chi tiết của tệp/thư mục (Viewer, Editor, Owner).<br>
+              • Chia sẻ thư mục tài liệu nhóm cho bạn bè trong lớp.<br>
+              • Chế độ chỉnh sửa đồng thời (Collaborative Editing) cập nhật tức thì qua WebSocket.</p>
+            </div>
+          </div>
+          <div class="phone-mockups">
+            <div class="phone-frame" style="width: 250px; height: 500px; border-width: 10px; border-radius: 28px;">
+              <img src="../images/giao diện app 2.png" alt="Access Control Screenshot">
+            </div>
+          </div>
+        </div>
+        <footer class="slide-footer">
+          <div class="footer-text">Lập trình trên thiết bị di động - Nhóm: UIT BUDDY</div>
+          <div class="slide-counter">Trang <span class="current-slide-num"></span> / <span class="total-slides-num"></span></div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- SLIDE 35: Tính năng: Quản lý Task cá nhân -->
+    <div class="slide">
+      <header class="slide-header">
+        <div class="header-left">
+          <button class="menu-toggle">☰</button>
+          <img src="../images/uit-logo.png" alt="UIT Logo" class="uit-logo">
+          <div class="project-brand">
+            <span class="brand-title">UIT Buddy</span>
+            <span class="brand-tag">Tính năng</span>
+          </div>
+        </div>
+        <h2 class="slide-title">Tính năng: Quản lý Task cá nhân</h2>
+        <div class="progress-bar"></div>
+      </header>
+      <div class="slide-body">
+        <div class="grid-2">
+          <div class="flex-col">
+            <div class="card">
+              <h3>Checklist & Todo Planner</h3>
+              <p style="font-size: 24px;">• Tạo các task tự do bên cạnh deadline Moodle.<br>
+              • Đặt độ ưu tiên (High, Medium, Low) và hạn chót cho task.<br>
+              • Tích hợp Local Notification hẹn giờ nhắc nhở sinh viên làm bài.</p>
+            </div>
+          </div>
+          <div class="phone-mockups">
+            <div class="phone-frame" style="width: 250px; height: 500px; border-width: 10px; border-radius: 28px;">
+              <img src="../images/giao diện app 1.png" alt="Personal Tasks Screenshot">
+            </div>
+          </div>
+        </div>
+        <footer class="slide-footer">
+          <div class="footer-text">Lập trình trên thiết bị di động - Nhóm: UIT BUDDY</div>
+          <div class="slide-counter">Trang <span class="current-slide-num"></span> / <span class="total-slides-num"></span></div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- SLIDE 36: Tính năng: Tiến độ học tập & Điểm -->
+    <div class="slide">
+      <header class="slide-header">
+        <div class="header-left">
+          <button class="menu-toggle">☰</button>
+          <img src="../images/uit-logo.png" alt="UIT Logo" class="uit-logo">
+          <div class="project-brand">
+            <span class="brand-title">UIT Buddy</span>
+            <span class="brand-tag">Tính năng</span>
+          </div>
+        </div>
+        <h2 class="slide-title">Tính năng: Tiến độ học tập & Điểm</h2>
+        <div class="progress-bar"></div>
+      </header>
+      <div class="slide-body">
+        <div class="grid-2">
+          <div class="flex-col">
+            <div class="card card-accent">
+              <h3>Theo dõi chỉ số GPA</h3>
+              <p style="font-size: 24px;">• Tra cứu bảng điểm chi tiết theo học kỳ.<br>
+              • Vẽ biểu đồ đường trực quan thể hiện sự thay đổi GPA qua các học kỳ.<br>
+              • Thanh tiến độ tích lũy tín chỉ giúp sinh viên kiểm soát lộ trình tốt nghiệp đúng hạn.</p>
+            </div>
+          </div>
+          <div class="phone-mockups">
+            <div class="phone-frame" style="width: 250px; height: 500px; border-width: 10px; border-radius: 28px;">
+              <img src="../images/giao diện app 3.png" alt="Academic Progress Screenshot">
+            </div>
+          </div>
+        </div>
+        <footer class="slide-footer">
+          <div class="footer-text">Lập trình trên thiết bị di động - Nhóm: UIT BUDDY</div>
+          <div class="slide-counter">Trang <span class="current-slide-num"></span> / <span class="total-slides-num"></span></div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- SLIDE 37: Push Notification — Firebase FCM -->
+    <div class="slide">
+      <header class="slide-header">
+        <div class="header-left">
+          <button class="menu-toggle">☰</button>
+          <img src="../images/uit-logo.png" alt="UIT Logo" class="uit-logo">
+          <div class="project-brand">
+            <span class="brand-title">UIT Buddy</span>
+            <span class="brand-tag">Thông báo</span>
+          </div>
+        </div>
+        <h2 class="slide-title">Push Notification — Firebase FCM</h2>
+        <div class="progress-bar"></div>
+      </header>
+      <div class="slide-body">
+        <div class="grid-2">
+          <div class="flex-col">
+            <div class="card">
+              <h3>FCM Service</h3>
+              <p style="font-size: 24px;">• Gửi tin nhắn đẩy từ Spring Boot (Firebase Admin SDK) đến thiết bị di động.<br>
+              • Nhắc nhở deadline tự động lúc 8h sáng hàng ngày cho các bài tập sắp tới hạn.<br>
+              • Đẩy thông báo ngay khi có bình luận mới hoặc lời mời kết bạn.</p>
+            </div>
+          </div>
+          <div class="diagram-container">
+            <div class="flex-col" style="align-items: center; width: 100%;">
+              <div class="flow-node" style="font-size: 20px; padding: 10px 20px;">Spring Boot Cloud Gateway</div>
+              <div class="flow-arrow" style="font-size: 24px; margin: 4px 0;">▼ REST API Call</div>
+              <div class="flow-node" style="background-color: var(--light-blue); font-size: 20px; padding: 10px 20px;">🔥 Firebase Cloud Messaging</div>
+              <div class="flow-arrow" style="font-size: 24px; margin: 4px 0;">▼ Push Notify</div>
+              <div class="flow-node" style="background-color: var(--primary-blue); color: white; font-size: 20px; padding: 10px 20px;">📱 Flutter Client App</div>
+            </div>
+          </div>
+        </div>
+        <footer class="slide-footer">
+          <div class="footer-text">Lập trình trên thiết bị di động - Nhóm: UIT BUDDY</div>
+          <div class="slide-counter">Trang <span class="current-slide-num"></span> / <span class="total-slides-num"></span></div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- SLIDE 38: Tổng kết -->
+    <div class="slide">
+      <header class="slide-header">
+        <div class="header-left">
+          <button class="menu-toggle">☰</button>
+          <img src="../images/uit-logo.png" alt="UIT Logo" class="uit-logo">
+          <div class="project-brand">
+            <span class="brand-title">UIT Buddy</span>
+            <span class="brand-tag">Tổng kết</span>
+          </div>
+        </div>
+        <h2 class="slide-title">Tổng kết</h2>
+        <div class="progress-bar"></div>
+      </header>
+      <div class="slide-body">
+        <div class="grid-2">
+          <div class="flex-col">
+            <div class="card">
+              <h3>Kết quả đạt được</h3>
+              <p style="font-size: 24px;">• Ứng dụng di động hoạt động tốt trên cả Android & iOS.<br>
+              • Kiến trúc Clean Architecture vững vàng giúp mở rộng tính năng dễ dàng.<br>
+              • Quy trình GitOps & CI/CD tự động hoá hoàn toàn việc kiểm thử và phân phối.</p>
+            </div>
+          </div>
+          <div class="flex-col">
+            <table>
+              <thead>
+                <tr>
+                  <th style="font-size: 24px; padding: 12px 16px;">Tiêu chí chất lượng</th>
+                  <th style="font-size: 24px; padding: 12px 16px;">Đạt được</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="font-size: 22px; padding: 12px 16px;">Unit Test Coverage</td>
+                  <td style="font-size: 22px; padding: 12px 16px;">&gt; 80%</td>
+                </tr>
+                <tr>
+                  <td style="font-size: 22px; padding: 12px 16px;">Tự động hoá CI/CD</td>
+                  <td style="font-size: 22px; padding: 12px 16px;">100% (Actions)</td>
+                </tr>
+                <tr>
+                  <td style="font-size: 22px; padding: 12px 16px;">Moodle API Sync</td>
+                  <td style="font-size: 22px; padding: 12px 16px;">Real-time sync</td>
+                </tr>
+                <tr>
+                  <td style="font-size: 22px; padding: 12px 16px;">Độ trễ WebSocket</td>
+                  <td style="font-size: 22px; padding: 12px 16px;">&lt; 100ms</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <footer class="slide-footer">
+          <div class="footer-text">Lập trình trên thiết bị di động - Nhóm: UIT BUDDY</div>
+          <div class="slide-counter">Trang <span class="current-slide-num"></span> / <span class="total-slides-num"></span></div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- SLIDE 39: Cảm ơn & Q&A -->
+    <div class="slide">
+      <div class="slide-qa-page" style="width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+        <h1 style="font-size: 80px; font-weight: 800; margin-bottom: 20px;">CẢM ƠN THẦY VÀ CÁC BẠN</h1>
+        <p style="font-size: 36px; color: var(--accent-light); margin-bottom: 50px;">Hỏi & Đáp — Q&A 🎤</p>
+        <div style="font-size: 100px;">💬</div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
